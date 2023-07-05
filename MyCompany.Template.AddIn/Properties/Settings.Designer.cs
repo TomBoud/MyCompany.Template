@@ -22,5 +22,41 @@ namespace MyCompany.Template.AddIn.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("TemplateRibbon")]
+        public string RibbonName {
+            get {
+                return ((string)(this["RibbonName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("TemplatePanel")]
+        public string PanelName {
+            get {
+                return ((string)(this["PanelName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("TemplateButton\r\n")]
+        public string PushButtonName {
+            get {
+                return ((string)(this["PushButtonName"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("TemplateIcon")]
+        public string TemplateButtonIcon {
+            get {
+                return ((string)(this["TemplateButtonIcon"]));
+            }
+        }
     }
 }
