@@ -1,13 +1,14 @@
 ﻿using MyCompany.Template.Abstraction.Interfaces;
+using MyCompany.Template.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MyCompany.Template.Abstraction
 {
-    public class Utils : ICallUi
+    public static class Utils
     {
-        public void TriggerUserInterface()
+        public static void TriggerUserInterface()
         {
             
         }

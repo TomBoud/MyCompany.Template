@@ -1,4 +1,10 @@
-﻿namespace MyCompany.Template.DataAccess
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyCompany.Template.DataAccess
 {
     public class Class1
     {
