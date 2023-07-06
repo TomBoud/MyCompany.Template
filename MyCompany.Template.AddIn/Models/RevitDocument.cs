@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyCompany.Template.Abstraction.Interfaces;
+using MyCompany.Template.Abstraction;
 
 namespace MyCompany.Template.AddIn.Models
 {
-    public class RevitDocument :IDocumnet
+    public class RevitDocument : IDocumnet
     {
         private readonly Document _document;
 

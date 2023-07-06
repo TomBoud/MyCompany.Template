@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
+using MyCompany.Template.AddIn.Commands;
 
 namespace MyCompany.Template.AddIn.Application
 {
@@ -20,7 +21,7 @@ namespace MyCompany.Template.AddIn.Application
             if(!revitUi.IsRibbonPanelExists())
             {
                 var panel = revitUi.CreateAppRibbonPanel();
-                var data = revitUi.CreateAppRibbonPushButtonData("MyClass");
+                var data = revitUi.CreateAppRibbonPushButtonData(typeof(RevitCmd));
                 var button = revitUi.CreateAppRibbonPushButton(panel, data);
 
                 revitUi.ConfigAppRibbonPushButton(button, Properties.Resources.TemplateIcon.ToBitmap());

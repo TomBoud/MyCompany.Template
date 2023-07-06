@@ -52,6 +52,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Template.addin" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -77,6 +78,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="UIFramework, Version=23.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\Revit_All_Main_Versions_API_x64.2023.0.0\lib\net48\UIFramework.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
@@ -93,7 +95,7 @@
   <ItemGroup>
     <Compile Include="Application\RevitApp.cs" />
     <Compile Include="Application\RevitUI.cs" />
-    <Compile Include="Commands\RevitCommand.cs" />
+    <Compile Include="Commands\RevitCmd.cs" />
     <Compile Include="Models\RevitDocument.cs" />
     <Compile Include="Models\RevitElement.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -120,13 +122,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj">
-      <Project>{842205b1-4dc9-43e0-a8d5-864b573fc993}</Project>
-      <Name>MyCompany.Template.Abstraction</Name>
-    </ProjectReference>
+    <None Include="Resources\configs.ico" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\configs.ico" />
+    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj">
+      <Project>{f118ee0f-6bff-4f65-9983-260227a6252c}</Project>
+      <Name>MyCompany.Template.Abstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCompany.Template.DataAccess\MyCompany.Template.DataAccess.csproj">
+      <Project>{d0f51142-29b6-4d62-9dc5-324ea736fdc8}</Project>
+      <Name>MyCompany.Template.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyCompany.Template.UI\MyCompany.Template.UI.csproj">
+      <Project>{4d10e885-2050-45ba-a07c-593bcaafeb4f}</Project>
+      <Name>MyCompany.Template.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autodesk.Revit.DB;
-using MyCompany.Template.Abstraction.Interfaces;
+using MyCompany.Template.Abstraction;
 
 namespace MyCompany.Template.AddIn.Models
 {

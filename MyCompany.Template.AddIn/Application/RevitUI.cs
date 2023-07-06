@@ -49,10 +49,10 @@ namespace MyCompany.Template.AddIn.Application
             return panel.AddItem(data) as PushButton;
         }
         
-        public PushButtonData CreateAppRibbonPushButtonData(string classToTrigger)
+        public PushButtonData CreateAppRibbonPushButtonData(Type classToTriger)
         {
-            if (string.IsNullOrEmpty(classToTrigger)) { return null; }
-            return new PushButtonData(_pushButtonName, _pushButtonName, Assembly.GetExecutingAssembly().Location, classToTrigger);
+            if (classToTriger == null) { return new PushButtonData(string.Empty, string.Empty, string.Empty, string.Empty); }
+            return new PushButtonData(_pushButtonName, _pushButtonName, classToTriger.Assembly.Location, classToTriger.FullName);
         }
 
         public void ConfigAppRibbonPushButton(PushButton button,Bitmap icon)

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyCompany.Template.DataAccess
+namespace MyCompany.Template.Abstraction
 {
-    public class Class1
+    public interface IDocumnet
     {
-
+        string Title { get; set; }
     }
 }
