@@ -43,18 +43,13 @@ namespace MyCompany.Template.AddIn.Application
             return _application.CreateRibbonPanel(_ribbonTabName, _ribbonPanelName);
         }
 
-        public PushButton CreateAppRibbonPushButton(RibbonPanel panel, PushButtonData data)
+        public PushButton CreateAppRibbonPushButton(RibbonPanel panel, Type classToTriger)
         {
-            if (string.IsNullOrEmpty(_pushButtonName)) { return null; }
-            return panel.AddItem(data) as PushButton;
+            if (string.IsNullOrEmpty(_pushButtonName) || classToTriger == null) { return null; }
+            var pushButtonData = new PushButtonData(_pushButtonName, _pushButtonName, classToTriger.Assembly.Location, classToTriger.FullName);
+            return panel.AddItem(pushButtonData) as PushButton;
         }
         
-        public PushButtonData CreateAppRibbonPushButtonData(Type classToTriger)
-        {
-            if (classToTriger == null) { return new PushButtonData(string.Empty, string.Empty, string.Empty, string.Empty); }
-            return new PushButtonData(_pushButtonName, _pushButtonName, classToTriger.Assembly.Location, classToTriger.FullName);
-        }
-
         public void ConfigAppRibbonPushButton(PushButton button,Bitmap icon)
         {
             if (button == null || icon == null) { return; }

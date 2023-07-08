@@ -18,17 +18,14 @@ namespace MyCompany.Template.AddIn.Application
 
             revitUi.CreateAppRibbonTab();
 
-            if(!revitUi.IsRibbonPanelExists())
-            {
-                var panel = revitUi.CreateAppRibbonPanel();
-                var data = revitUi.CreateAppRibbonPushButtonData(typeof(RevitCmd));
-                var button = revitUi.CreateAppRibbonPushButton(panel, data);
+            var panel = revitUi.CreateAppRibbonPanel();
+            var button = revitUi.CreateAppRibbonPushButton(panel, typeof(RevitCmd));
 
-                revitUi.ConfigAppRibbonPushButton(button, Properties.Resources.TemplateIcon.ToBitmap());
-            }
+            revitUi.ConfigAppRibbonPushButton(button, Properties.Resources.TemplateIcon.ToBitmap());
 
             return Result.Succeeded;
         }
+
 
         public Result OnShutdown(UIControlledApplication application)
         {
