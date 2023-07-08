@@ -15,11 +15,13 @@ namespace MyCompany.Template.DataAccess
         bool IsConnected { get; }
 
         // Common methods
+        
         void Connect();
         void Disconnect();
         void ExecuteQuery(string query);
         DataTable ExecuteQueryWithResult(string query);
-        void InsertRecord(string tableName, Dictionary<string, object> values);
+        void LoadRecords<T>(string tableName, Dictionary<string, object> values);
+        void InsertRecords<T>(string tableName, Dictionary<string, object> values);
         void UpdateRecord(string tableName, Dictionary<string, object> values, string condition);
         void DeleteRecord(string tableName, string condition);
     }
