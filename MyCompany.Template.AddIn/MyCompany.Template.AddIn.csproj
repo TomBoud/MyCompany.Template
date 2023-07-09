@@ -52,11 +52,15 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\AddinAppStore.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AddinAppStore.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Template.addin" />
     <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
+    <None Include="Properties\AddinRevitUI.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <LastGenOutput>AddinRevitUI.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -98,15 +102,20 @@
     <Compile Include="Commands\RevitCmd.cs" />
     <Compile Include="Models\RevitDocument.cs" />
     <Compile Include="Models\RevitElement.cs" />
+    <Compile Include="Properties\AddinAppStore.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>AddinAppStore.settings</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Include="Properties\AddinRevitUI.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
+      <DependentUpon>AddinRevitUI.settings</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
