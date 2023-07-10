@@ -18,10 +18,14 @@ namespace MyCompany.Template.DataAccess.Autodesk.AppStore
         private readonly string _baseUrl;
         private readonly string _endPoint;
 
+        public EntitlementModel EntitlementResposne { get; private set; }
+
         public EntitlementApi(string baseUrl, string endPoint)
         {
             _baseUrl = baseUrl;
             _endPoint = endPoint;
+
+            EntitlementResposne = new EntitlementModel();
         }
 
         public bool CheckEntitlement(string appId, string userId)
@@ -44,8 +48,8 @@ namespace MyCompany.Template.DataAccess.Autodesk.AppStore
                 //Parse the response and get the value of IsValid.
                 if (response.IsSuccessStatusCode)
                 {
-                    var responseContent = JsonConvert.DeserializeObject<EntitlementModel>(response.Content);
-                    return responseContent.IsValid;
+                    EntitlementResposne = JsonConvert.DeserializeObject<EntitlementModel>(response.Content);
+                    return EntitlementResposne.IsValid;
                 }
                 else
                 {
