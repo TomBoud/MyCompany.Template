@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyCompany.Template.AddIn.Properties {
+namespace MyCompany.Template.RevitAddin.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MyCompany.Template.AddIn.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyCompany.Template.AddIn.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyCompany.Template.RevitAddin.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,16 +57,6 @@ namespace MyCompany.Template.AddIn.Properties {
             }
             set {
                 resourceCulture = value;
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] App {
-            get {
-                object obj = ResourceManager.GetObject("App", resourceCulture);
-                return ((byte[])(obj));
             }
         }
         

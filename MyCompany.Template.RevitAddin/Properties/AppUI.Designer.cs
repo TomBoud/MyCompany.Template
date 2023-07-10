@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyCompany.Template.AddIn.Properties {
+namespace MyCompany.Template.RevitAddin.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
-    internal sealed partial class AddinRevitUI : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class AppUI : global::System.Configuration.ApplicationSettingsBase {
         
-        private static AddinRevitUI defaultInstance = ((AddinRevitUI)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new AddinRevitUI())));
+        private static AppUI defaultInstance = ((AppUI)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new AppUI())));
         
-        public static AddinRevitUI Default {
+        public static AppUI Default {
             get {
                 return defaultInstance;
             }

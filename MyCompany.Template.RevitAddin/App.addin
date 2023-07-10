@@ -2,16 +2,16 @@
 <RevitAddIns>
 	<AddIn Type="Application">
 		<Name>
-			MyCompany.Template.AddIn
+			MyCompany.Template.RevitAddin
 		</Name>
 		<Assembly>
-			MyCompany.Template.AddIn.dll
+			MyCompany.Template.RevitAddin.dll
 		</Assembly>
 		<AddInId>
 			FEA0D675-2969-4E0E-A5CF-3D747C31A51E
 		</AddInId>
 		<FullClassName>
-			MyCompany.Template.AddIn.Application.RevitApp
+			MyCompany.Template.RevitAddin.Application.RevitApp
 		</FullClassName>
 		<Text>
 			This is a template for a Revit Plugin

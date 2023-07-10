@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Autodesk.Revit.DB;
 using MyCompany.Template.Abstraction;
 
-namespace MyCompany.Template.AddIn.Models
+namespace MyCompany.Template.RevitAddin.Models
 {
     public class RevitElement : IElement
     {
@@ -23,11 +23,41 @@ namespace MyCompany.Template.AddIn.Models
         public string CategoryName { get { return _element.Category.Name; } set { CategoryName = value; } }
         public string DocumentName { get { return _element.Document.Title; } set { DocumentName = value; } }
         
-        public int Id { get { return _element.Id.IntegerValue; } set { Id = value; } }
-        public int LevelId { get { return _element.LevelId.IntegerValue; } set { Id = value; } }
-        #endregion
+        public long Id 
+        { 
+            get 
+            {
+#if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
+                return Convert.ToInt64(_element.Id.IntegerValue);
+#else
+                return _element.Id.Value;
+#endif
+            }
+            set 
+            { 
+                Id = value;
+            } 
+        }
 
-        #region Methods
+        
+        public long LevelId 
+        { 
+            get 
+            {
+#if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
+                return Convert.ToInt64(_element.LevelId.IntegerValue);
+#else
+                return _element.LevelId.Value; 
+#endif
+            } 
+            set 
+            { 
+                Id = value; 
+            } 
+        }
+#endregion
+
+#region Methods
         private string GetLevelName()
         {
             var level = _element.Document.GetElement(_element.LevelId) as Level;
@@ -41,6 +71,6 @@ namespace MyCompany.Template.AddIn.Models
                 return level.Name;
             }
         }
-        #endregion
+#endregion
     }
 }

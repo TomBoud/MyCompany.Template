@@ -2,7 +2,7 @@
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 
-using MyCompany.Template.AddIn.Models;
+using MyCompany.Template.RevitAddin.Models;
 using MyCompany.Template.Abstraction;
 using MyCompany.Template.UI;
 using System;
@@ -15,7 +15,7 @@ using MyCompany.Template.DataAccess.Autodesk.AppStore;
 /// <summary>
 /// Represents a namesapce for managing the scripts to be executed in Autodesk Revit.
 /// </summary>
-namespace MyCompany.Template.AddIn.Commands
+namespace MyCompany.Template.RevitAddin.Commands
 {
     /// <summary>
     /// Represents the RevitCmd class for executing a specific function in Autodesk Revit.
@@ -107,9 +107,9 @@ namespace MyCompany.Template.AddIn.Commands
         /// <returns>True if the user has entitlement, false otherwise.</returns>
         private bool UserHasEntitlement(string userId)
         {
-            string baseUrl = Properties.AddinAppStore.Default.BaseUrl;
-            string endPoint = Properties.AddinAppStore.Default.EndPoint;
-            string appId = Properties.AddinAppStore.Default.AppId;
+            string baseUrl = Properties.AppStore.Default.BaseUrl;
+            string endPoint = Properties.AppStore.Default.EndPoint;
+            string appId = Properties.AppStore.Default.AppId;
 
             var appStore = new EntitlementApi(baseUrl, endPoint);
 
@@ -132,7 +132,7 @@ namespace MyCompany.Template.AddIn.Commands
             }
 
             //Compare the time span between the grace date to today
-            if (Properties.AddinAppStore.Default.GraceDateTime > DateTime.Now)
+            if (Properties.AppStore.Default.GraceDateTime > DateTime.Now)
             {
                 //User is allowed to use this command for the duration of a grace period
                 return true;
@@ -145,8 +145,13 @@ namespace MyCompany.Template.AddIn.Commands
                     if (UserHasEntitlement(userId))
                     {
                         //The user is autherized, extend the grace date to temporary skip proofing
-                        Properties.AddinAppStore.Default.GraceDateTime = DateTime.Today.AddDays(7);
-                        return true; ;
+                        //Get the grace settings
+                        var settings = Properties.AppStore.Default;
+                        //Extend the allowed grace time
+                        settings.GraceDateTime = DateTime.Today.AddDays(7);
+                        //Update new grace settings
+                        settings.Save();
+                        return true;
                     }
                     else
                     {
@@ -155,11 +160,16 @@ namespace MyCompany.Template.AddIn.Commands
                         return false;
                     }
                 }
+                //Allow the user a short grace period in case of an error
                 catch (Exception)
                 {
-                    //Allow the user a short grace period in case of an error
-                    TimeSpan timeSpan = Properties.AddinAppStore.Default.GraceTime;
-                    Properties.AddinAppStore.Default.GraceDateTime = DateTime.Today.Add(timeSpan);
+                    //Get the grace settings
+                    var settings = Properties.AppStore.Default;
+                    var timeSpan = settings.GraceTime;
+                    //Extend the allowed grace time
+                    settings.GraceDateTime = DateTime.Today.Add(timeSpan);
+                    //Update new grace settings
+                    settings.Save();
                     return true;
                 }
             }

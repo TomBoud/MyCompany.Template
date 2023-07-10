@@ -10,7 +10,7 @@ using System.Reflection;
 /// <summary>
 /// Represents a namesapce for managing the user interface in Autodesk Revit.
 /// </summary>
-namespace MyCompany.Template.AddIn.Application
+namespace MyCompany.Template.RevitAddin.Application
 {
     /// <summary>
     /// Represents the RevitUI class for managing the user interface in Autodesk Revit.
@@ -45,9 +45,9 @@ namespace MyCompany.Template.AddIn.Application
         {
             _application = application;
 
-            _ribbonTabName = Properties.AddinRevitUI.Default.RibbonName;
-            _ribbonPanelName = Properties.AddinRevitUI.Default.PanelName;
-            _pushButtonName = Properties.AddinRevitUI.Default.PushButtonName;
+            _ribbonTabName = RevitAddin.Properties.AppUI.Default.RibbonName;
+            _ribbonPanelName = RevitAddin.Properties.AppUI.Default.PanelName;
+            _pushButtonName = RevitAddin.Properties.AppUI.Default.PushButtonName;
         }
      
         /// <summary>

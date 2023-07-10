@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputType>Library</OutputType>
+    <Configurations>Debug 2023;2023;2022;2021;2020;Debug 2022;Debug 2021;Debug 2020;2024;Debug 2024</Configurations>
+  </PropertyGroup>
+
+  <!-- RevitVersion -->
+  <Choose>
+    <When Condition="$(Configuration.Contains('2017'))">
+      <PropertyGroup>
+        <RevitVersion>2017</RevitVersion>
+        <TargetFramework>net46</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2018'))">
+      <PropertyGroup>
+        <RevitVersion>2018</RevitVersion>
+        <TargetFramework>net46</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2019'))">
+      <PropertyGroup>
+        <RevitVersion>2019</RevitVersion>
+        <TargetFramework>net47</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2020'))">
+      <PropertyGroup>
+        <RevitVersion>2020</RevitVersion>
+        <TargetFramework>net47</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2021'))">
+      <PropertyGroup>
+        <RevitVersion>2021</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2022'))">
+      <PropertyGroup>
+        <RevitVersion>2022</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </When>
+    <When Condition="$(Configuration.Contains('2023'))">
+      <PropertyGroup>
+        <RevitVersion>2023</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+    </When>
+	<When Condition="$(Configuration.Contains('2024'))">
+		  <PropertyGroup>
+			  <RevitVersion>2024</RevitVersion>
+			  <TargetFramework>net48</TargetFramework>
+		  </PropertyGroup>
+	</When>
+    <Otherwise>
+      <PropertyGroup>
+        <RevitVersion>2024</RevitVersion>
+        <TargetFramework>net48</TargetFramework>
+      </PropertyGroup>
+   </Otherwise>
+  </Choose>
+
+  <PropertyGroup>
+    <ProjectGuid>{6be18a95-ef75-4983-8456-a2097084d7ac}</ProjectGuid>
+    <RootNamespace>MyCompany.Template.RevitAddin</RootNamespace>
+    <AssemblyName>MyCompany.Template.RevitAddin</AssemblyName>
+  </PropertyGroup>
+
+  <!-- Release -->
+  <PropertyGroup Condition="!$(Configuration.Contains('Debug'))">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\$(RevitVersion)\</OutputPath>
+    <DefineConstants>REVIT$(RevitVersion)</DefineConstants>
+    <NoWarn>MSB3052</NoWarn>
+    <DebugType>None</DebugType>
+  </PropertyGroup>
+
+  <!-- Debug -->
+  <PropertyGroup Condition="$(Configuration.Contains('Debug'))">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;REVIT$(RevitVersion)</DefineConstants>
+    <DebugType>Full</DebugType>
+  </PropertyGroup>
+
+  <!-- DebugRevitVersion -->
+  <PropertyGroup>
+    <DebugRevitVersion>$(RevitVersion)</DebugRevitVersion>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramW6432)\Autodesk\Revit $(DebugRevitVersion)\Revit.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="App.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2020.0.0" IncludeAssets="compile; build" PrivateAssets="all" Condition="$(Configuration.Contains('2020'))"/>
+	<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2021.0.0" IncludeAssets="compile; build" PrivateAssets="all" Condition="$(Configuration.Contains('2021'))"/>
+	<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2022.0.0" IncludeAssets="compile; build" PrivateAssets="all" Condition="$(Configuration.Contains('2022'))"/>
+	<PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2023.0.0" IncludeAssets="compile; build" PrivateAssets="all" Condition="$(Configuration.Contains('2023'))"/>
+    <PackageReference Include="Revit_All_Main_Versions_API_x64" Version="2024.0.0" IncludeAssets="compile; build" PrivateAssets="all" Condition="$(Configuration.Contains('2024'))"/>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj" />
+    <ProjectReference Include="..\MyCompany.Template.DataAccess\MyCompany.Template.DataAccess.csproj" />
+    <ProjectReference Include="..\MyCompany.Template.UI\MyCompany.Template.UI.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="Properties\AppStore.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppStore.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\AppUI.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppUI.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Properties\AppStore.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AppStore.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\AppUI.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>AppUI.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+
+  <PropertyGroup>
+    <PostBuildEvent>
+      echo "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+      if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\*.addin" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+      if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+    </PostBuildEvent>
+  </PropertyGroup>
+
+  <Target Name="CleanRevitAddin" BeforeTargets="CoreClean">
+    <Message Text="Clean Revit Addin Files" Importance="high" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\$(AssemblyName).addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\$(AssemblyName).dll" />
+  </Target>
+
+</Project>

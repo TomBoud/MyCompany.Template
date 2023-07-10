@@ -32,6 +32,26 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2024|AnyCPU'">
+    <OutputPath>bin\2024\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug 2024|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug 2024\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,10 +73,6 @@
     <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj">
       <Project>{f118ee0f-6bff-4f65-9983-260227a6252c}</Project>
       <Name>MyCompany.Template.Abstraction</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MyCompany.Template.AddIn\MyCompany.Template.AddIn.csproj">
-      <Project>{bc10415c-3ac4-43e8-aad1-53c3ca75a8df}</Project>
-      <Name>MyCompany.Template.AddIn</Name>
     </ProjectReference>
     <ProjectReference Include="..\MyCompany.Template.DataAccess\MyCompany.Template.DataAccess.csproj">
       <Project>{d0f51142-29b6-4d62-9dc5-324ea736fdc8}</Project>

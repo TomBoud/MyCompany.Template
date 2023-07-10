@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyCompany.Template.AddIn.Properties {
+namespace MyCompany.Template.RevitAddin.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
-    internal sealed partial class AddinAppStore : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class AppStore : global::System.Configuration.ApplicationSettingsBase {
         
-        private static AddinAppStore defaultInstance = ((AddinAppStore)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new AddinAppStore())));
+        private static AppStore defaultInstance = ((AppStore)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new AppStore())));
         
-        public static AddinAppStore Default {
+        public static AppStore Default {
             get {
                 return defaultInstance;
             }

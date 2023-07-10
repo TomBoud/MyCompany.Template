@@ -13,8 +13,8 @@ namespace MyCompany.Template.Abstraction
         string DocumentName { get; set; }
         string CategoryName { get; set; }
 
-        int Id { get; set; }
-        int LevelId { get; set; }
+        long Id { get; set; }
+        long LevelId { get; set; }
 
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MyCompany.Template.Abstraction;
 
-namespace MyCompany.Template.AddIn.Models
+namespace MyCompany.Template.RevitAddin.Models
 {
     public class RevitDocument : IDocumnet
     {

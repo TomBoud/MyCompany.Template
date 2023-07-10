@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
-using MyCompany.Template.AddIn.Commands;
+using MyCompany.Template.RevitAddin.Commands;
 using MyCompany.Template.DataAccess.Autodesk.AppStore;
 
 /// <summary>
 /// Represents a namesapce for managing the user interface in Autodesk Revit.
 /// </summary>
-namespace MyCompany.Template.AddIn.Application
+namespace MyCompany.Template.RevitAddin.Application
 {
     /// <summary>
     /// Represents the main entrance point for the Revit add-in.
