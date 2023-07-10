@@ -28,23 +28,20 @@ namespace MyCompany.Template.DataAccess.Autodesk.AppStore
         {
             try
             {
-                // (1) Build request
+                //Build request
                 var client = new RestClient(_baseUrl);
-
-                // Set resource/end point
                 var request = new RestRequest();
-                //"webservices/checkentitlement"
                 request.Resource = _endPoint;
                 request.Method = Method.Get;
 
-                // Add parameters
+                //Add parameters
                 request.AddParameter(nameof(userId), userId);
                 request.AddParameter(nameof(appId), appId);
 
-                // (2) Execute request and get response
+                //Execute request and get response
                 var response = client.Execute(request);
 
-                // (3) Parse the response and get the value of IsValid.
+                //Parse the response and get the value of IsValid.
                 if (response.IsSuccessStatusCode)
                 {
                     var responseContent = JsonConvert.DeserializeObject<EntitlementModel>(response.Content);

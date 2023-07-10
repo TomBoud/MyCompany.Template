@@ -28,11 +28,18 @@ namespace MyCompany.Template.RevitAddin.Application
         {
             var revitUi = new RevitUI(application);
 
-            revitUi.CreateAppRibbonTab();
+            if(revitUi.AppRibbonTabExists() is false)
+            {
+                revitUi.CreateAppRibbonTab();
+            }
 
-            var panel = revitUi.CreateAppRibbonPanel();
+            if(revitUi.AppRibbonPanelExists() is false)
+            {
+                revitUi.CreateAppRibbonPanel();
+            }
+
+            var panel = revitUi.GetAppRibbonPanel();
             var button = revitUi.CreateAppRibbonPushButton(panel, typeof(RevitCmd));
-
             revitUi.ConfigAppRibbonPushButton(button, Properties.Resources.TemplateIcon.ToBitmap());
 
             return Result.Succeeded;

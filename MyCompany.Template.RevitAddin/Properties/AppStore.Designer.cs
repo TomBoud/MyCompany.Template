@@ -72,5 +72,14 @@ namespace MyCompany.Template.RevitAddin.Properties {
                 return ((global::System.TimeSpan)(this["GraceTime"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AuthRequired {
+            get {
+                return ((bool)(this["AuthRequired"]));
+            }
+        }
     }
 }

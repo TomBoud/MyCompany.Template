@@ -45,9 +45,9 @@ namespace MyCompany.Template.RevitAddin.Application
         {
             _application = application;
 
-            _ribbonTabName = RevitAddin.Properties.AppUI.Default.RibbonName;
-            _ribbonPanelName = RevitAddin.Properties.AppUI.Default.PanelName;
-            _pushButtonName = RevitAddin.Properties.AppUI.Default.PushButtonName;
+            _ribbonTabName = Properties.AppUI.Default.RibbonName;
+            _ribbonPanelName = Properties.AppUI.Default.PanelName;
+            _pushButtonName = Properties.AppUI.Default.PushButtonName;
         }
      
         /// <summary>
@@ -107,7 +107,12 @@ namespace MyCompany.Template.RevitAddin.Application
             var pushButtonData = new PushButtonData(_pushButtonName, _pushButtonName, classToTriger.Assembly.Location, classToTriger.FullName);
             return panel.AddItem(pushButtonData) as PushButton;
         }
-      
+
+        public RibbonPanel GetAppRibbonPanel()
+        {
+            return _application.GetRibbonPanels(_ribbonTabName).FirstOrDefault(x => x.Name.Equals(_ribbonPanelName));
+        }
+
         /// <summary>
         /// Configures the specified push button with the provided icon.
         /// </summary>
@@ -136,9 +141,36 @@ namespace MyCompany.Template.RevitAddin.Application
         /// Checks if the ribbon panel exists.
         /// </summary>
         /// <returns>True if the ribbon panel exists; otherwise, false.</returns>
-        public bool IsRibbonPanelExists()
+        public bool AppRibbonPanelExists()
         {
             return _application.GetRibbonPanels().Any(panel => panel.Name.Equals(_ribbonPanelName));
         }
+
+        /// <summary>
+        /// Checks if the ribbon tab exists.
+        /// </summary>
+        /// <returns>True if the ribbon tab exists; otherwise, false.</returns>
+        /// <exception cref="ArgumentException">Thrown when the tab name is either null or empty.</exception>
+        public bool AppRibbonTabExists()
+        {
+            if (string.IsNullOrEmpty(_ribbonPanelName))
+            {
+                throw new ArgumentException("The ribbon tab name is null or empty, Check the .settings file", nameof(_ribbonPanelName));
+            }
+
+            var panels = _application.GetRibbonPanels();
+
+            foreach(RibbonPanel panel in panels)
+            {
+                if(panel.Title.Equals(_ribbonTabName))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        
     }
 }

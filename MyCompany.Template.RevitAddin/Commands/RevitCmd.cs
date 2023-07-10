@@ -8,7 +8,6 @@ using MyCompany.Template.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Windows.Forms;
 using System.Reflection;
 using MyCompany.Template.DataAccess.Autodesk.AppStore;
 
@@ -37,8 +36,14 @@ namespace MyCompany.Template.RevitAddin.Commands
             var doc = commandData.Application.ActiveUIDocument.Document;
 
             //Check if the user is autherized to use this commmand
-            if (CommandProofingStatus(app.LoginUserId) is false) { return Result.Cancelled; };
-
+            if(Properties.AppStore.Default.AuthRequired)
+            {
+                if (CommandProofingStatus(app.LoginUserId) is false) 
+                { 
+                    return Result.Cancelled; 
+                };
+            }
+            
             //Absstract revit objects for the UI
             IDocumnet idoc = new RevitDocument(doc);
 
@@ -53,7 +58,7 @@ namespace MyCompany.Template.RevitAddin.Commands
             var logicOutput = ExecuteCommandLogic(doc, userPrefernces);
 
             //Return feedback to the user
-            MessageBox.Show(logicOutput.ToString());
+            TaskDialog.Show(string.Empty, logicOutput?.ToString() ?? string.Empty);
 
             return Result.Succeeded;
         }
