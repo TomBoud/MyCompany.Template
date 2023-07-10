@@ -9,7 +9,7 @@
       <Value Profile="(Default)">webservices/checkentitlement</Value>
     </Setting>
     <Setting Name="AppId" Type="System.String" Scope="Application">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">D8EF9571-6E04-4BAE-8ABA-B847117E6541</Value>
     </Setting>
     <Setting Name="GraceDateTime" Type="System.DateTime" Scope="User">
       <Value Profile="(Default)">07/09/2023 16:03:00</Value>

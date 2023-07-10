@@ -45,7 +45,7 @@ namespace MyCompany.Template.AddIn.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("D8EF9571-6E04-4BAE-8ABA-B847117E6541")]
         public string AppId {
             get {
                 return ((string)(this["AppId"]));
