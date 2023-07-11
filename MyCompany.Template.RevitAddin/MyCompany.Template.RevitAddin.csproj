@@ -5,7 +5,7 @@
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputType>Library</OutputType>
-    <Configurations>Debug 2023;2023;2022;2021;2020;Debug 2022;Debug 2021;Debug 2020;2024;Debug 2024</Configurations>
+    <Configurations>Debug 2023;2023;2022;2021;Debug 2022;Debug 2021;2024;Debug 2024</Configurations>
   </PropertyGroup>
 
   <!-- RevitVersion -->

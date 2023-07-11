@@ -60,7 +60,7 @@ namespace MyCompany.Template.RevitAddin.Models
 #region Methods
         private string GetLevelName()
         {
-            var level = _element.Document.GetElement(_element.LevelId) as Level;
+            Level level = _element.Document.GetElement(_element.LevelId) as Level;
             
             if(level is null)
             {

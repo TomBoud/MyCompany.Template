@@ -14,6 +14,7 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -127,7 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj">
-      <Project>{f118ee0f-6bff-4f65-9983-260227a6252c}</Project>
+      <Project>{7c2321b6-d93e-4c9f-bef5-54c274508cb9}</Project>
       <Name>MyCompany.Template.Abstraction</Name>
     </ProjectReference>
   </ItemGroup>
