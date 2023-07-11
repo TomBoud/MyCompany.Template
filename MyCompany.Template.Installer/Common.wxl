@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization Culture="en-us" xmlns="http://schemas.microsoft.com/wix/2006/localization">
+
+	<!-- <Common settings> -->
+	<String Id="CompanyName">MyCompany</String>
+	<String Id="Language">1033</String>
+	<String Id="Description">This is a short description about the product</String>
+	<String Id="DowngradeErrorMessage">"A newer version of MyCompany.Template.RevitAddin is already installed.</String>
+	
+	<!-- <ProductName for CPU types> -->
+	<String Id="ProductName_x86">MyCompany.Template.RevitAddin (32bit)</String>
+	<String Id="ProductName_x64">MyCompany.Template.RevitAddin (64bit)</String>
+	
+
+</WixLocalization>
