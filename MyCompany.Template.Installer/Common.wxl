@@ -3,13 +3,13 @@
 
 	<!-- <Common settings> -->
 	<String Id="CompanyName">MyCompany</String>
+	<String Id="ProductName">Template.RevitAddin</String>
 	<String Id="Language">1033</String>
 	<String Id="Description">This is a short description about the product</String>
 	<String Id="DowngradeErrorMessage">"A newer version of MyCompany.Template.RevitAddin is already installed.</String>
 	
-	<!-- <ProductName for CPU types> -->
+	<!-- <ProductName by CPU types> -->
 	<String Id="ProductName_x86">MyCompany.Template.RevitAddin (32bit)</String>
 	<String Id="ProductName_x64">MyCompany.Template.RevitAddin (64bit)</String>
-	
 
 </WixLocalization>

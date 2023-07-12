@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
 
-	<!-- <ProductCode for CPU types> -->
+	<!-- <ProductCode by CPU types> -->
 	<?if $(var.Platform)=x64 ?>
 	<?define ProductCode = "{107BCE09-7AFE-4071-9D49-2AB83ABF09B7}"?>
 	<?else?>
@@ -9,7 +9,7 @@
 	<?endif?>
 	
 	<!-- TODO: Change this code, should be unique for each product -->
-	<?define UpgradeCode = "f3590d3a-ada2-424b-8346-adfdc869495d"?>
+	<?define UpgradeCode = "{1CA7FD26-60DD-41EB-A0B2-6E1289B642B8}"?>
 
 	<!-- <BuildVersion sync with Product Version> -->
 	<?define BuildVersion = "1.2.3.4" ?>
@@ -37,21 +37,25 @@
 		<MediaTemplate EmbedCab="yes" />
 
 		<!-- <Refrence to the icon for the installer (show at add/remove), using built-in Property> -->
-		<Icon Id="icon.ico" SourceFile="$(var.MyCompany.Template.RevitAddin.ProjectDir)\Resources\configs.ico"/>
+		<Icon Id="icon.ico" SourceFile="$(var.ProjectDir)\Resources\TemplateIcon.ico"/>
 		<Property Id="ARPPRODUCTICON">icon.ico</Property>
 		
 		<!-- <Refrence to the application web site, using built-in Property> -->
-		<Property Id="APPURLINFOABOUT">http://www.MyCompany.com</Property>
+		<Property Id="ARPURLINFOABOUT">http://www.MyCompany.com</Property>
 
 		<!-- <Add basic UI to the installer, using WixUI Extension dll> -->
 		<UIRef Id="WixUI_Minimal"/>
+
+		<!-- <Change the installer UI images and license -->
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Resources\TemplateLicense.rtf"/>
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Resources\TemplateBackground.bmp"/>
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Resources\TemplateBanner.bmp"/>
 		
 		<!-- <Define components, shortcuts, files and folders> -->
-		<Feature Id="ProductFeature" 
-				 Title="MyCompany.Template.Installer"
-				 Level="1">
-			
+		<Feature Id="ProductFeature"  Title="MyCompany.Template.Installer" Level="1">
+			<!-- <Contunie to the Product.wxs for the ouput configs  > -->
 			<ComponentGroupRef Id="ProductComponents" />
+			<ComponentGroupRef Id="PublishedComponents" />
 		</Feature>
 	</Product>
 

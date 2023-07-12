@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	
+
 	<!-- <This code is used for the folder structure> -->
 	<Fragment>
-		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-			<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
-		</ComponentGroup>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<!--This will access the \ProgramData\ folder. -->
+			<Directory Id="CommonAppDataFolder">
+				<!--This will access the \ProgramData\Autodesk\ folder. -->
+				<Directory Id="TargetVendorFolder" Name="Autodesk">
+					<!--This will access the \ProgramData\Autodesk\Revit folder. -->
+					<Directory Id="TargetRevitFolder" Name="Revit">
+						<!--This will access the \ProgramData\Autodesk\Revit\Addins folder. -->
+						<Directory Id="TargetAddinsFolder" Name="Addins">
+							<!--This will access the \ProgramData\Autodesk\Revit\Addins\2021 folder. -->
+							<Directory Id="TargetVersionFolder" Name="2021">
+									<!--This will access the \ProgramData\Autodesk\Revit\Addins\2021\MyCompany.Product folder. -->
+									<Directory Id="INSTALLFOLDER" Name="!(loc.CompanyName).!(loc.ProductName)" />
+								</Directory>
+							</Directory>
+						</Directory>
+					</Directory>
+				</Directory>
+			</Directory>
 	</Fragment>
+	
 </Wix>

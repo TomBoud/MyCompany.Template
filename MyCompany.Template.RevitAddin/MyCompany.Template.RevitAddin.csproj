@@ -156,6 +156,9 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Update="MyCompany.Template.addin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Properties\AppStore.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>AppStore.Designer.cs</LastGenOutput>
@@ -169,10 +172,13 @@
 
   <PropertyGroup>
     <PostBuildEvent>
-      echo "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
-      if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\*.addin" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
-      if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
-    </PostBuildEvent>
+		
+		echo "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+		if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\*.addin" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+		if not exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin" mkdir "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin"
+		copy "$(SolutionDir)$(AssemblyName)\$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin"
+
+	</PostBuildEvent>
   </PropertyGroup>
 
 

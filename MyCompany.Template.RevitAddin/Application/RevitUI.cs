@@ -162,7 +162,12 @@ namespace MyCompany.Template.RevitAddin.Application
 
             foreach(RibbonPanel panel in panels)
             {
-                if(panel.Title.Equals(_ribbonTabName))
+                if (panel.Title is null)
+                {
+                    continue;
+                }
+
+                if (panel.Title.Equals(_ribbonTabName))
                 {
                     return true;
                 }

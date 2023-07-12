@@ -5,7 +5,7 @@
 			MyCompany.Template.RevitAddin
 		</Name>
 		<Assembly>
-			MyCompany.Template.RevitAddin.dll
+			MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll
 		</Assembly>
 		<AddInId>
 			FEA0D675-2969-4E0E-A5CF-3D747C31A51E

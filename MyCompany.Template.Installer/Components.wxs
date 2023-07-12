@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	
+
 	<!-- <This code is used for referencing output files> -->
 	<Fragment>
-		<Directory Id="TARGETDIR" Name="SourceDir">
-			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="MyCompany.Template.Installer" />
-			</Directory>
-		</Directory>
+		<ComponentGroup Id="ProductComponents">
+
+			<ComponentRef Id="RevitAddinFile"/>
+			
+		</ComponentGroup>
+
+		<DirectoryRef Id="TargetVersionFolder" FileSource="$(var.MyCompany.Template.RevitAddin.ProjectDir)\bin\Release\2021\">
+			<Component Id="RevitAddinFile" Guid="{5423ADD1-4FFA-418E-A27E-2C3A88EF0171}">
+				<File Id="AddinFile" Name="MyCompany.Template.addin" KeyPath="yes"/>
+
+			</Component>
+		</DirectoryRef>
+		
 	</Fragment>
 
 </Wix>
