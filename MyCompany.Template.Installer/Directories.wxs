@@ -11,17 +11,16 @@
 					<!--This will access the \ProgramData\Autodesk\Revit folder. -->
 					<Directory Id="TargetRevitFolder" Name="Revit">
 						<!--This will access the \ProgramData\Autodesk\Revit\Addins folder. -->
-						<Directory Id="TargetAddinsFolder" Name="Addins">
-							<!--This will access the \ProgramData\Autodesk\Revit\Addins\2021 folder. -->
-							<Directory Id="TargetVersionFolder" Name="2021">
-									<!--This will access the \ProgramData\Autodesk\Revit\Addins\2021\MyCompany.Product folder. -->
-									<Directory Id="INSTALLFOLDER" Name="!(loc.CompanyName).!(loc.ProductName)" />
-								</Directory>
-							</Directory>
+						<Directory Id="INSTALLFOLDER" Name="Addins">
+						<Directory Id="TargetRevit2021Folder" Name="2021"/>
+						<Directory Id="TargetRevit2022Folder" Name="2022"/>
+						<Directory Id="TargetRevit2023Folder" Name="2023"/>
+						<Directory Id="TargetRevit2024Folder" Name="2024"/>
 						</Directory>
 					</Directory>
 				</Directory>
 			</Directory>
+		</Directory>
 	</Fragment>
 	
 </Wix>

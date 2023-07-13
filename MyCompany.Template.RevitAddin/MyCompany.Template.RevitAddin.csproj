@@ -75,7 +75,7 @@
   <!-- Release -->
   <PropertyGroup Condition="!$(Configuration.Contains('Debug'))">
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\$(RevitVersion)\</OutputPath>
+    <OutputPath>bin\Release\$(RevitVersion)\$(AssemblyName)\</OutputPath>
     <DefineConstants>REVIT$(RevitVersion)</DefineConstants>
     <NoWarn>MSB3052</NoWarn>
     <DebugType>None</DebugType>
@@ -172,9 +172,11 @@
 
   <PropertyGroup>
     <PostBuildEvent>
-		
+
 		echo "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+		<!-- Move the .addin file to the location where revit.exe will search for it -->
 		if exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)" copy "$(SolutionDir)$(AssemblyName)\*.addin" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)"
+		<!-- Move the .dll files to the location where the main dll entry file is located -->
 		if not exist "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin" mkdir "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin"
 		copy "$(SolutionDir)$(AssemblyName)\$(OutputPath)*.dll" "$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.RevitAddin"
 

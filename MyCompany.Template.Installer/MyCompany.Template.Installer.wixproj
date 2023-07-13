@@ -74,9 +74,9 @@
   <Target Name="BeforeBuild">
     <!-- Harvest file components from publish folder -->
 	  <PropertyGroup>
-		  <DefineConstants>BasePath=..\MyCompany.Template.RevitAddin\bin\Release\2021\</DefineConstants>
+		  <DefineConstants>BasePath=..\MyCompany.Template.RevitAddin\bin\Release\</DefineConstants>
 	  </PropertyGroup>
-    <HeatDirectory OutputFile="ComponentsGenerated.wxs" DirectoryRefId="INSTALLFOLDER" ComponentGroupName="PublishedComponents" SuppressCom="true" Directory="..\MyCompany.Template.RevitAddin\bin\Release\2021" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" RunAsSeparateProcess="true" />
+    <HeatDirectory OutputFile="ComponentsGenerated.wxs" DirectoryRefId="INSTALLFOLDER" ComponentGroupName="PublishedComponents" SuppressCom="true" Directory="..\MyCompany.Template.RevitAddin\bin\Release" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" RunAsSeparateProcess="true" />
   </Target>
   <Target Name="AfterBuild">
   </Target>
