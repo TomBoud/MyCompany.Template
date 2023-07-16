@@ -2,14 +2,17 @@
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 
-using MyCompany.Template.RevitAddin.Models;
-using MyCompany.Template.Abstraction;
-using MyCompany.Template.UI;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+
+using MyCompany.Template.RevitAddin.Models;
+using MyCompany.Template.Abstractions;
+using MyCompany.Template.UI;
 using MyCompany.Template.DataAccess.Autodesk.AppStore;
+
 
 /// <summary>
 /// Represents a namesapce for managing the scripts to be executed in Autodesk Revit.

@@ -55,6 +55,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -73,7 +74,18 @@
     <Compile Include="FormRevitCmd.Designer.cs">
       <DependentUpon>FormRevitCmd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\ElementModel.cs" />
+    <Compile Include="Models\IElementRepo.cs" />
+    <Compile Include="Presenters\ElementPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ElementRepo.cs" />
+    <Compile Include="Views\ElementView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ElementView.Designer.cs">
+      <DependentUpon>ElementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IElementView.cs" />
     <EmbeddedResource Include="FormRevitCmd.resx">
       <DependentUpon>FormRevitCmd.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\ElementView.resx">
+      <DependentUpon>ElementView.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,10 +115,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj">
+    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstractions.csproj">
       <Project>{7c2321b6-d93e-4c9f-bef5-54c274508cb9}</Project>
-      <Name>MyCompany.Template.Abstraction</Name>
+      <Name>MyCompany.Template.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

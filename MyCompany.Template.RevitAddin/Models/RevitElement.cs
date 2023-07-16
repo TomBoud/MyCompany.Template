@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Autodesk.Revit.DB;
-using MyCompany.Template.Abstraction;
+using MyCompany.Template.Abstractions;
 
 namespace MyCompany.Template.RevitAddin.Models
 {
@@ -23,7 +23,7 @@ namespace MyCompany.Template.RevitAddin.Models
         public string CategoryName { get { return _element.Category.Name; } set { CategoryName = value; } }
         public string DocumentName { get { return _element.Document.Title; } set { DocumentName = value; } }
         
-        public long Id 
+        public long ElementId 
         { 
             get 
             {
@@ -35,11 +35,9 @@ namespace MyCompany.Template.RevitAddin.Models
             }
             set 
             { 
-                Id = value;
+                ElementId = value;
             } 
         }
-
-        
         public long LevelId 
         { 
             get 
@@ -52,7 +50,7 @@ namespace MyCompany.Template.RevitAddin.Models
             } 
             set 
             { 
-                Id = value; 
+                ElementId = value; 
             } 
         }
 #endregion

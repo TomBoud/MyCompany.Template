@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyCompany.Template.Abstraction
+namespace MyCompany.Template.Abstractions
 {
     public interface IDocumnet
     {

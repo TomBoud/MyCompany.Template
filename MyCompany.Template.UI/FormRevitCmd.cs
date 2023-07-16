@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Windows.Forms;
-using MyCompany.Template.Abstraction;
+using MyCompany.Template.Abstractions;
 
 namespace MyCompany.Template.UI
 {

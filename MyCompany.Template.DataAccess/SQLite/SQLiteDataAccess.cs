@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
-using MyCompany.Template.Abstraction;
+using MyCompany.Template.Abstractions;
 
 namespace MyCompany.Template.DataAccess.SQLite
 {

@@ -125,7 +125,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj" />
+    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstractions.csproj" />
     <ProjectReference Include="..\MyCompany.Template.DataAccess\MyCompany.Template.DataAccess.csproj" />
     <ProjectReference Include="..\MyCompany.Template.UI\MyCompany.Template.UI.csproj" />
   </ItemGroup>
@@ -235,8 +235,8 @@
 
   <Target Name="CleanRevitAddin" BeforeTargets="CoreClean">
     <Message Text="Clean Revit Addin Files" Importance="high" />
-    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\$(AssemblyName).addin" />
-    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\$(AssemblyName).dll" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\MyCompany.Template.addin" />
+    <Delete Files="$(AppData)\Autodesk\REVIT\Addins\$(RevitVersion)\$(AssemblyName)\$(AssemblyName).dll" />
   </Target>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyCompany.Template.Abstraction
+namespace MyCompany.Template.Abstractions
 {
     public interface IElement
     {
@@ -13,8 +13,7 @@ namespace MyCompany.Template.Abstraction
         string DocumentName { get; set; }
         string CategoryName { get; set; }
 
-        long Id { get; set; }
+        long ElementId { get; set; }
         long LevelId { get; set; }
-
     }
 }

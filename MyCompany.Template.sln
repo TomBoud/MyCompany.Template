@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.Template.DataAcce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.Template.UI.Tests.xUnit", "MyCompany.Template.UI.Tests.xUnit\MyCompany.Template.UI.Tests.xUnit.csproj", "{9E7080C4-BB4D-49BF-AB0E-E599861CB460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.Template.Abstraction", "MyCompany.Template.Abstraction\MyCompany.Template.Abstraction.csproj", "{7C2321B6-D93E-4C9F-BEF5-54C274508CB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCompany.Template.Abstractions", "MyCompany.Template.Abstraction\MyCompany.Template.Abstractions.csproj", "{7C2321B6-D93E-4C9F-BEF5-54C274508CB9}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "MyCompany.Template.Installer", "MyCompany.Template.Installer\MyCompany.Template.Installer.wixproj", "{74236C35-B622-43B5-9728-1C4D1A787640}"
 EndProject
@@ -735,8 +735,8 @@ Global
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|Any CPU.Build.0 = Debug|x86
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|ARM64.ActiveCfg = Debug|x86
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|ARM64.Build.0 = Debug|x86
-		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x64.ActiveCfg = Debug|x86
-		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x64.Build.0 = Debug|x86
+		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x64.ActiveCfg = Debug|x64
+		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x64.Build.0 = Debug|x64
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x86.ActiveCfg = Debug|x86
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2023|x86.Build.0 = Debug|x86
 		{74236C35-B622-43B5-9728-1C4D1A787640}.Debug 2024|Any CPU.ActiveCfg = Debug|x86
