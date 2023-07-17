@@ -20,6 +20,18 @@ namespace MyCompany.Template.UI.Models
         private long elementId;
         private long levelId;
 
+        // Constructor
+        public ElementModel(IElement element)
+        {
+            Id = 0;
+            Name = element.Name;
+            LevelName = element.LevelName;
+            DocumentName = element.DocumentName;
+            CategoryName = element.CategoryName;
+            ElementId = element.ElementId;
+            LevelId = element.LevelId;
+        }
+
         // Properties - Validation
         [DisplayName("Object ID")]
         public long Id 

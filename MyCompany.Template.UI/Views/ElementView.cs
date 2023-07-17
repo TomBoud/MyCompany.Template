@@ -33,12 +33,8 @@ namespace MyCompany.Template.UI.Views
         public ElementView()
         {
             InitializeComponent();
-
             // Method to delegate View events to cutsom handlers
             AssociateAndRaiseViewEvents();
-
-            // Part of the MVP pattern to couple the View to the Presenter
-
         }
 
         /// <summary>
@@ -60,9 +56,9 @@ namespace MyCompany.Template.UI.Views
             };
             // Search
             Search_btn.Click += delegate { SearchElementEvent?.Invoke(this, EventArgs.Empty); };
-            SearchElement_txb.KeyDown += (s, e) =>
+            SearchElement_txb.KeyUp += (s, e) =>
             {
-                if (e.KeyCode is Keys.Enter) { SearchElementEvent?.Invoke(this, EventArgs.Empty); }
+                SearchElementEvent?.Invoke(this, EventArgs.Empty);
             };
             
         }

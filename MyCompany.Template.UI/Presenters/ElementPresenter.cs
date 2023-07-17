@@ -41,8 +41,6 @@ namespace MyCompany.Template.UI.Presenters
             this.view.SetElementListBindingSource(elementsBindingSource);
             // Load Element list view
             LoadAllElementList();
-            // Show the view
-            this.view.ShowFormDialog();
         }
 
         // Methods
@@ -82,8 +80,7 @@ namespace MyCompany.Template.UI.Presenters
                 repo.Delete(element);
                 view.IsSuccessful = true;
                 view.Message = "Element delete operation accepted";
-                LoadAllElementList();
-
+                repo.GetAll();
             }
             catch(Exception)
             {

@@ -35,24 +35,6 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '2024|AnyCPU'">
-    <OutputPath>bin\2024\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug 2024|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug 2024\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -68,17 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormRevitCmd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormRevitCmd.Designer.cs">
-      <DependentUpon>FormRevitCmd.cs</DependentUpon>
-    </Compile>
     <Compile Include="Models\ElementModel.cs" />
     <Compile Include="Models\IElementRepo.cs" />
     <Compile Include="Presenters\ElementPresenter.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\ElementRepo.cs" />
+    <Compile Include="Repositories\ElementRepo.cs" />
     <Compile Include="Views\ElementView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,9 +63,6 @@
       <DependentUpon>ElementView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IElementView.cs" />
-    <EmbeddedResource Include="FormRevitCmd.resx">
-      <DependentUpon>FormRevitCmd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

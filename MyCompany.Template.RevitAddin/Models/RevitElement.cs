@@ -20,7 +20,7 @@ namespace MyCompany.Template.RevitAddin.Models
         #region Properties
         public string Name { get { return _element.Name; } set { Name = value; } }
         public string LevelName { get { return GetLevelName(); } set { LevelName = value; } }
-        public string CategoryName { get { return _element.Category.Name; } set { CategoryName = value; } }
+        public string CategoryName { get { return _element?.Category?.Name ?? string.Empty; } set { CategoryName = value; } }
         public string DocumentName { get { return _element.Document.Title; } set { DocumentName = value; } }
         
         public long ElementId 

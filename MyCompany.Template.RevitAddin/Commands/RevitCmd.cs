@@ -1,18 +1,16 @@
 ﻿using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
-
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-
 using MyCompany.Template.RevitAddin.Models;
 using MyCompany.Template.Abstractions;
 using MyCompany.Template.UI;
+using MyCompany.Template.UI.Models;
+using MyCompany.Template.UI.Repositories;
 using MyCompany.Template.DataAccess.Autodesk.AppStore;
-
 
 /// <summary>
 /// Represents a namesapce for managing the scripts to be executed in Autodesk Revit.
@@ -39,49 +37,31 @@ namespace MyCompany.Template.RevitAddin.Commands
             var doc = commandData.Application.ActiveUIDocument.Document;
 
             //Check if the user is autherized to use this commmand
-            if(Properties.AppStore.Default.AuthRequired)
+            if (Properties.AppStore.Default.AuthRequired)
             {
-                if (CommandProofingStatus(app.LoginUserId) is false) 
-                { 
-                    return Result.Cancelled; 
+                if (CommandProofingStatus(app.LoginUserId) is false)
+                {
+                    return Result.Cancelled;
                 };
             }
-            
+
             //Absstract revit objects for the UI
             IDocumnet idoc = new RevitDocument(doc);
+            var iElements = GetActiveViewElemets(doc);
 
             //Start the UI to get the user input
-            var userInterface = new FormRevitCmd(idoc);
-            userInterface.ShowDialog();
+            ElementRepo.ElementDataRepo = iElements.Select(ele => new ElementModel(ele)).ToList();
+            Program.Main();
 
             //Get the user interactions results
-            var userPrefernces = GetUserPrefernces(userInterface);
+            //var userPrefernces = GetUserPrefernces(userInterface);
 
             //Execute this command logic
-            var logicOutput = ExecuteCommandLogic(doc, userPrefernces);
+            //var logicOutput = ExecuteCommandLogic(doc, userPrefernces);
 
             //Return feedback to the user
-            TaskDialog.Show(string.Empty, logicOutput?.ToString() ?? string.Empty);
-
+            //TaskDialog.Show(string.Empty, logicOutput?.ToString() ?? string.Empty);
             return Result.Succeeded;
-        }
-
-        /// <summary>
-        /// Gets all properties and values from a form.
-        /// </summary>
-        /// <param name="form">The form object.</param>
-        /// <returns>The list of property-value pairs.</returns>
-        private object GetUserPrefernces(System.Windows.Forms.Form form)
-        {
-            PropertyInfo[] properties = form.GetType().GetProperties(BindingFlags.Instance | BindingFlags.Public);
-            var result = new List<(PropertyInfo, object)>();
-
-            foreach (PropertyInfo property in properties)
-            {
-                object value = property.GetValue(form);
-                result.Add((property, value));
-            }
-            return result;
         }
 
         /// <summary>
@@ -181,6 +161,20 @@ namespace MyCompany.Template.RevitAddin.Commands
                     return true;
                 }
             }
+        }
+
+        private IEnumerable<IElement> GetActiveViewElemets(Document doc)
+        {
+            var collecotrElemetns = new FilteredElementCollector(doc, doc.ActiveView.Id)
+               .WhereElementIsNotElementType();
+
+            var revitElements = new List<RevitElement>();
+            collecotrElemetns.ToElements().ToList().ForEach(element =>
+            {
+                revitElements.Add(new RevitElement(element));
+            });
+
+            return revitElements.Cast<IElement>().AsEnumerable();
         }
     }
 }

@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyCompany.Template.Abstractions;
 using MyCompany.Template.UI.Models;
 
-namespace MyCompany.Template.UI.Repository
+namespace MyCompany.Template.UI.Repositories
 {
     /// <summary>
     /// This class represenets the implementaion of <see cref="IElementRepo"/> for this UI operations.
@@ -15,7 +17,7 @@ namespace MyCompany.Template.UI.Repository
     public class ElementRepo : IElementRepo
     {
         public static List<ElementModel> ElementDataRepo { get; set; }
-        
+
         public void Add(ElementModel elementModel)
         {
             ElementDataRepo.Add(elementModel);
@@ -35,10 +37,10 @@ namespace MyCompany.Template.UI.Repository
         {
             var result = new List<ElementModel>();
 
-            result.AddRange(ElementDataRepo.Where(x => x.Id.ToString().Equals(value)).ToArray());
-            result.AddRange(ElementDataRepo.Where(x => x.Name.Equals(value)).ToArray());
-            result.AddRange(ElementDataRepo.Where(x => x.LevelName.Equals(value)).ToArray());
-            result.AddRange(ElementDataRepo.Where(x => x.CategoryName.Equals(value)).ToArray());
+            result.AddRange(ElementDataRepo.Where(x => x.Id.ToString().Contains(value)).ToArray());
+            result.AddRange(ElementDataRepo.Where(x => x.Name.Contains(value)).ToArray());
+            result.AddRange(ElementDataRepo.Where(x => x.LevelName.Contains(value)).ToArray());
+            result.AddRange(ElementDataRepo.Where(x => x.CategoryName.Contains(value)).ToArray());
 
             return result.AsEnumerable();
         }
