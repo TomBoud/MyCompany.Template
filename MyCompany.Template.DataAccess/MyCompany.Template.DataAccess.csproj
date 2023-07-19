@@ -112,15 +112,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLite\SQLiteDataAccess.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Autodesk\Authentication\API\" />
-    <Folder Include="Autodesk\Authentication\Models\" />
-    <Folder Include="Autodesk\DataManagement\API\" />
-    <Folder Include="Autodesk\DataManagement\Models\" />
-    <Folder Include="Autodesk\DesignAutomation\API\" />
-    <Folder Include="Autodesk\DesignAutomation\Models\" />
-    <Folder Include="Autodesk\RevitReposetory\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />

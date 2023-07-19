@@ -95,14 +95,6 @@
     <StartAction>Program</StartAction>
     <StartProgram>$(ProgramW6432)\Autodesk\Revit $(DebugRevitVersion)\Revit.exe</StartProgram>
   </PropertyGroup>
-  <ItemGroup>
-    <None Remove="App.db" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   
   <ItemGroup>
     <Reference Include="PresentationCore" />
