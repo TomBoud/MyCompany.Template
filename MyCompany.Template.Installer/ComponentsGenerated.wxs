@@ -4,424 +4,318 @@
         <DirectoryRef Id="INSTALLFOLDER">
             <Directory Id="dirB60B665046F103D44FFD74595BE82D83" Name="2021">
                 <Directory Id="dir58E216340305DF18104446A6D3294320" Name="MyCompany.Template.RevitAddin">
-                    <Component Id="cmp50FE71E2E592E4F22147D14BE17D0DBC" Guid="{8198A97C-09CC-456B-B113-FB86730518A0}">
+                    <Component Id="cmp50FE71E2E592E4F22147D14BE17D0DBC" Guid="{F1D37635-9859-4D68-82CF-C5F2F6E13AED}">
                         <File Id="fil7C94A0BAE2182B16F8411092289192B7" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\App.db" />
                     </Component>
-                    <Component Id="cmpF8DE802BE0066C3CD5FCB97EB2959EC7" Guid="{60475FC0-1A46-40D1-B095-D997D0AD83E1}">
+                    <Component Id="cmpF8DE802BE0066C3CD5FCB97EB2959EC7" Guid="{9A6518BD-2FD7-45DA-AC02-34F33F674D4F}">
                         <File Id="filBF62D47D8C4E49B160E00BACDA5AD88B" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.dll" />
                     </Component>
-                    <Component Id="cmp5198B4A6F3F081449C428D87CC2AAD99" Guid="{8DF859F1-0CDA-497A-9A1C-9ED9F1DF8C4E}">
+                    <Component Id="cmp5198B4A6F3F081449C428D87CC2AAD99" Guid="{7570759B-CC9D-4E70-A8F4-9A3EF286CA5A}">
                         <File Id="filB26493ABAFBABE07841D22DCCBB1A0A3" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.xml" />
                     </Component>
-                    <Component Id="cmp42BD717BBF431074B85671326F077F85" Guid="{64CFB5BE-1F29-4AB7-AE4A-6B745E4A36D8}">
-                        <File Id="fil7BFC55A03A2F396DA48E8CEFCB7757E7" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.dll" />
+                    <Component Id="cmp42BD717BBF431074B85671326F077F85" Guid="{2BEE5181-B3FF-4177-8331-6CA716110D0F}">
+                        <File Id="fil7BFC55A03A2F396DA48E8CEFCB7757E7" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.dll" />
                     </Component>
-                    <Component Id="cmpE4A7382F22E07649BDF926F9B5A805B5" Guid="{EDAC0378-FF23-4424-8682-6374D7DCA6E3}">
-                        <File Id="fil572C92CFC3109CF905A03330E606E91B" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.pdb" />
+                    <Component Id="cmpE4A7382F22E07649BDF926F9B5A805B5" Guid="{903235B9-A0AC-44C3-AF3D-7756ECE46C3B}">
+                        <File Id="fil572C92CFC3109CF905A03330E606E91B" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.pdb" />
                     </Component>
-                    <Component Id="cmpD80320699E56D75CD1B13EC7D0F059EF" Guid="{2DE8D378-1AB6-4568-A0E3-2ECCF6CC0914}">
+                    <Component Id="cmpD80320699E56D75CD1B13EC7D0F059EF" Guid="{3AE692CA-D18B-4DE9-AAC0-FF3E3193DC74}">
                         <File Id="filC933740B9E9861C7FA567B033E678FDB" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.addin" />
                     </Component>
-                    <Component Id="cmp4936BEDCC324401C301B082E60F69153" Guid="{A1C00FC1-8B1E-45BE-9B22-649940ED9B2A}">
+                    <Component Id="cmp4936BEDCC324401C301B082E60F69153" Guid="{8D7BB70B-692F-4833-A09A-291452286893}">
                         <File Id="filF8C16FC273C1923F1442D067AA875672" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll" />
                     </Component>
-                    <Component Id="cmpAFE5CF3A2A76B24189D38290F7B37085" Guid="{E3667783-3804-4532-B5D3-2453D66FAA66}">
+                    <Component Id="cmpAFE5CF3A2A76B24189D38290F7B37085" Guid="{AECBC386-F47E-4AB9-AE45-6ACDFCA6565E}">
                         <File Id="fil8286DEB4E483B53772A7C55E845A061D" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll.config" />
                     </Component>
-                    <Component Id="cmp150D0B8A50BE39C552FCF07D86A1A059" Guid="{A3ACCF57-0479-4730-B5A1-E431FC3A5B62}">
+                    <Component Id="cmp150D0B8A50BE39C552FCF07D86A1A059" Guid="{04A9E842-70C0-433C-9394-AC7ECAA73EE6}">
                         <File Id="fil6ED527D2A81A842B374BC58F886B86EB" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.pdb" />
                     </Component>
-                    <Component Id="cmpB529E7C7E322490EFFAFA76B60B8D486" Guid="{311AD02C-605D-4784-ABF0-B435B7E80FBC}">
+                    <Component Id="cmpB529E7C7E322490EFFAFA76B60B8D486" Guid="{DBC7C8B1-2B86-4C80-8142-C36E6FAB328B}">
                         <File Id="filE490BB003373087F92B233D7E86303E6" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll" />
                     </Component>
-                    <Component Id="cmp19574030E0DAB9632EDC5E8BAA297BCD" Guid="{9EC78BDD-7C26-4EB2-860C-F8FFFE36AD39}">
+                    <Component Id="cmp19574030E0DAB9632EDC5E8BAA297BCD" Guid="{F29A58F8-5223-42EE-9C3E-4B1AC24D6E24}">
                         <File Id="filEA110EE50C1176CB77A37DE72187332A" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll.config" />
                     </Component>
-                    <Component Id="cmp69FF6C2315D1C4CDDEE447C442172A11" Guid="{5374ED0B-7AC4-4B82-9CA2-E771FAE1D04C}">
+                    <Component Id="cmp69FF6C2315D1C4CDDEE447C442172A11" Guid="{0EB4E63F-A95B-45F1-95DF-3E39A273E1E8}">
                         <File Id="fil54B50AA9CF33C3685C70E6CFE7DDDBB5" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll" />
                     </Component>
-                    <Component Id="cmp9BDF270FFC06BE2064A95896C62304B8" Guid="{CA609DC2-8D44-4CDC-AC0A-148F24A0410F}">
+                    <Component Id="cmp9BDF270FFC06BE2064A95896C62304B8" Guid="{6A966C00-BFAE-4FBC-8828-EB203898E821}">
                         <File Id="filF421DE934A556C4F31FE386C7013E9CB" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll.config" />
                     </Component>
-                    <Component Id="cmpB7DC915DD38A43D2214D0BA1C064DD34" Guid="{51477DD1-0ECF-433B-BD44-5ED5A100942C}">
+                    <Component Id="cmpB7DC915DD38A43D2214D0BA1C064DD34" Guid="{9D19A830-27AE-418B-9AF9-F1D541D68F08}">
                         <File Id="fil2FB2FAB8E6F4AC1A162BD4E3C27249AE" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\MyCompany.Template.UI.pdb" />
                     </Component>
-                    <Component Id="cmpF3008353D68C13FA0C4CDF8CFD20F8C3" Guid="{E570F404-05BD-43C8-9DA8-635734C764B6}">
+                    <Component Id="cmpF3008353D68C13FA0C4CDF8CFD20F8C3" Guid="{0AF5141E-C066-4109-AAC2-AC2CF2355827}">
                         <File Id="fil333C7B01242B20448B3360AFC677B3E8" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\Newtonsoft.Json.dll" />
                     </Component>
-                    <Component Id="cmp96E7B0125DA2319EBCDB345FCA2EC7ED" Guid="{412D6732-EB84-451A-B04E-DDA7CC443ACC}">
+                    <Component Id="cmp96E7B0125DA2319EBCDB345FCA2EC7ED" Guid="{61D9E7C6-DE8D-4038-B2B7-1B397CD2AFCF}">
                         <File Id="fil3748AAE3E0B5FEB4B18BD9441F3DD5A5" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\Newtonsoft.Json.xml" />
                     </Component>
-                    <Component Id="cmp44CEAFB5CC7D15BB2C0799ADB4BCF716" Guid="{1261FEAD-F065-4460-81F6-CFA07E546C48}">
+                    <Component Id="cmp44CEAFB5CC7D15BB2C0799ADB4BCF716" Guid="{DF99B1CC-C617-47B5-9D93-FEDFFC1921B7}">
                         <File Id="filD6CFD970FF1DFAE827644706F9E920C2" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\RestSharp.dll" />
                     </Component>
-                    <Component Id="cmp6704A8C8E77EC60D802E23C1FC4E9525" Guid="{053E16DA-6819-43E6-9897-40D0BCFEFEA9}">
+                    <Component Id="cmp6704A8C8E77EC60D802E23C1FC4E9525" Guid="{3A7895C6-1E59-48BE-AF79-331596420012}">
                         <File Id="fil02158847E1603296D1675112BC17B412" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\RestSharp.xml" />
                     </Component>
-                    <Component Id="cmp49D4F7C85BBAE9AE50B88F0F70929FD9" Guid="{64103C7F-2BB9-47F8-8DD5-F21F63FC1A9C}">
+                    <Component Id="cmp49D4F7C85BBAE9AE50B88F0F70929FD9" Guid="{BE997C2D-AF91-4793-A41B-9B986C0A9E96}">
                         <File Id="fil9C1EA5A8F19ECB4D6110ACA6E6C27BE5" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Buffers.dll" />
                     </Component>
-                    <Component Id="cmpA0C3670E36FB587755B3166CF88EF4B5" Guid="{FE6F6A0D-433B-4B6F-A2A6-94AB49146F02}">
+                    <Component Id="cmpA0C3670E36FB587755B3166CF88EF4B5" Guid="{A8BB19DC-D887-405C-8948-11815F218ABA}">
                         <File Id="fil4C7FFCE7A67479C2BD2B607E4DA7F98C" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Buffers.xml" />
                     </Component>
-                    <Component Id="cmpDD9AEF2B7849D13B0E8B513C745EA026" Guid="{98346144-BE45-445C-A0E0-AB421F71A30B}">
+                    <Component Id="cmpDD9AEF2B7849D13B0E8B513C745EA026" Guid="{7CFD2163-CA44-42F1-8E20-6D52E2244880}">
                         <File Id="fil1574493F7C430353F9F4FF40743410C8" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Memory.dll" />
                     </Component>
-                    <Component Id="cmp03FDCABED4B9AFE049C070F468491D35" Guid="{42052947-80BA-4A61-9DC7-BBBBD746F8FA}">
+                    <Component Id="cmp03FDCABED4B9AFE049C070F468491D35" Guid="{7E5ADBE6-ACD2-4204-AF42-FE913D17091E}">
                         <File Id="filBD4FAE68311413A1FEB100F2642E9FF6" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Memory.xml" />
                     </Component>
-                    <Component Id="cmp4D2C493404ECF58CE0652E1CB419C4AC" Guid="{633FE89A-C2A3-4871-B8C7-A73F30161584}">
+                    <Component Id="cmp4D2C493404ECF58CE0652E1CB419C4AC" Guid="{C02D7635-A8E3-479F-87BC-EB2CB6156BE3}">
                         <File Id="filE6B41CCAFF8538BAD34C058E62AADBF4" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Numerics.Vectors.dll" />
                     </Component>
-                    <Component Id="cmp8F837EF1D0C378FF0103321C3DC1A930" Guid="{93389413-1E39-473F-96F8-29D1444513BE}">
+                    <Component Id="cmp8F837EF1D0C378FF0103321C3DC1A930" Guid="{05E17D65-E334-47C1-9C17-729F49E489A2}">
                         <File Id="fil4610FA609FD512CCC4190FD701100E77" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Numerics.Vectors.xml" />
                     </Component>
-                    <Component Id="cmpA7A0D9DDFAC223B8E8BF7751C3A832AB" Guid="{8C00C5D5-17C9-4C5D-BA53-7FD81274841D}">
+                    <Component Id="cmpA7A0D9DDFAC223B8E8BF7751C3A832AB" Guid="{F98F21BE-6710-46B4-86A6-13560103BC59}">
                         <File Id="fil44E0CF71AF5FA309660A37B691430D14" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.dll" />
                     </Component>
-                    <Component Id="cmp27DF61AB1B4526CB4DD12ABADC732307" Guid="{2C7643E6-E35B-4CD0-8B89-EA145145E9EB}">
+                    <Component Id="cmp27DF61AB1B4526CB4DD12ABADC732307" Guid="{36C5CA5E-A334-4129-9A91-FD2FDB1E555D}">
                         <File Id="fil82A06BEAC827D27441949BBBF2498AE4" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.xml" />
                     </Component>
-                    <Component Id="cmpC9CC77EEB36418D21E7DEFACFCD3C178" Guid="{26D4A6C7-D988-4087-A8E6-20BDAED6E630}">
+                    <Component Id="cmpC9CC77EEB36418D21E7DEFACFCD3C178" Guid="{4B53268C-5FF0-4078-98B5-1D6D7F4BBF90}">
                         <File Id="fil07E994A7FA5D739966D333155E489564" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.dll" />
                     </Component>
-                    <Component Id="cmp760D97A7B916872AE39E6C1CA6F36459" Guid="{6FE74BD3-4D4A-4E38-A04D-D1E05CBC2269}">
+                    <Component Id="cmp760D97A7B916872AE39E6C1CA6F36459" Guid="{90AC1713-F49F-4A3D-B3CA-94C286DB2598}">
                         <File Id="filA121C829C77030701BBF5465481B4379" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.xml" />
                     </Component>
-                    <Component Id="cmp9E27EAF0FB2E3C1BAB8818532C8C814B" Guid="{FAACA1E3-ED2F-442A-B42E-FC0C94E1635D}">
+                    <Component Id="cmp9E27EAF0FB2E3C1BAB8818532C8C814B" Guid="{48F2DEBD-4C8C-409A-BEDD-59C51ED41258}">
                         <File Id="filDAF438ED5A09257E3B4D2693C0ACBA0B" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Text.Json.dll" />
                     </Component>
-                    <Component Id="cmp14C63CBF2FCCB6EC67A023A8CF8FD717" Guid="{30AFDA3F-2CC4-42CC-B27E-AD5E99EFCA4A}">
+                    <Component Id="cmp14C63CBF2FCCB6EC67A023A8CF8FD717" Guid="{2EEF5EA5-564C-474F-A197-527B10C19F83}">
                         <File Id="filE8744753A6DB42103A5FA8568D1D1AF7" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Text.Json.xml" />
                     </Component>
-                    <Component Id="cmp93B856CAD42F7D200A5EE79375B0D45C" Guid="{D7CB6773-2162-44B0-9AF7-E4913FC75F68}">
+                    <Component Id="cmp93B856CAD42F7D200A5EE79375B0D45C" Guid="{86DA0604-B732-4E3A-9409-96A74FB0413A}">
                         <File Id="fil7AC953B2741E2B19C5F6E1601C661654" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.dll" />
                     </Component>
-                    <Component Id="cmp2A22F1CEDF80B3B7FCAECEE90A2E4576" Guid="{19CB921A-D690-4549-B70E-54EC634973E2}">
+                    <Component Id="cmp2A22F1CEDF80B3B7FCAECEE90A2E4576" Guid="{CFB76A79-3020-43B6-A9B1-1390B32960DD}">
                         <File Id="fil4CE87F20D3C95B35BDF11AAED9AB21E2" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.xml" />
                     </Component>
-                    <Component Id="cmp4F7AA97B726F0279F16FB31D3F354CA3" Guid="{333BC986-DC48-4D6E-A276-A6C694498954}">
+                    <Component Id="cmp4F7AA97B726F0279F16FB31D3F354CA3" Guid="{0340B002-139F-48E2-8207-0C7DC824BD2C}">
                         <File Id="fil63984D1A5C8940B4AA96BC0923DE31D7" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.ValueTuple.dll" />
                     </Component>
-                    <Component Id="cmp639D7FFE636AECF49F2C2CD013336F77" Guid="{4DFA0947-C3C5-4C6F-B312-CD8FAEA0A86F}">
+                    <Component Id="cmp639D7FFE636AECF49F2C2CD013336F77" Guid="{BD748090-CB81-42A6-9EAA-3F930D0352FB}">
                         <File Id="filF6CDD65CF4E41D958E58B96D6AC9CE08" KeyPath="yes" Source="$(var.BasePath)\2021\MyCompany.Template.RevitAddin\System.ValueTuple.xml" />
                     </Component>
                 </Directory>
             </Directory>
             <Directory Id="dirC61F985304E830C31712E096EF1CDA60" Name="2022">
                 <Directory Id="dir366F661749F8E16280F34E0764A5FC34" Name="MyCompany.Template.RevitAddin">
-                    <Component Id="cmp8B603EFEEAF361C25D519AEAE966944D" Guid="{1B651594-DD3D-4F71-B544-E685187AA5B6}">
+                    <Component Id="cmp8B603EFEEAF361C25D519AEAE966944D" Guid="{8215AE92-8D62-4C16-A7D4-D0B58BE7DD68}">
                         <File Id="fil891A001A48D78AC682CE04F3750048DD" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\App.db" />
                     </Component>
-                    <Component Id="cmp51177D7493B2CA83C93C2C19692EDADA" Guid="{3B667A85-EF85-49D3-991C-6190250C56C6}">
+                    <Component Id="cmp51177D7493B2CA83C93C2C19692EDADA" Guid="{8F7B29AB-2C72-4A4A-A541-A7AD6C6F3AEA}">
                         <File Id="filBCBA87CEEEBB43902551D1AC0DA784BE" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.dll" />
                     </Component>
-                    <Component Id="cmp62E41F37CDD3DE2932FC7E86912D2093" Guid="{D403793D-1ACF-4238-B76F-39160DE99385}">
+                    <Component Id="cmp62E41F37CDD3DE2932FC7E86912D2093" Guid="{80D172A6-CCBA-44CC-9942-247FBF2E5609}">
                         <File Id="fil7BFF4218974CE92EB4939D10420ADC6C" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.xml" />
                     </Component>
-                    <Component Id="cmpE5B6772960176FC60A11B8E9272A252C" Guid="{CF219731-B613-475F-94CA-54859F262DE0}">
-                        <File Id="filC5297C4BC49439D5EF6D31842384EE05" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.dll" />
+                    <Component Id="cmpE5B6772960176FC60A11B8E9272A252C" Guid="{6E22960C-F9B1-4490-A760-2451ADE5D3CB}">
+                        <File Id="filC5297C4BC49439D5EF6D31842384EE05" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.dll" />
                     </Component>
-                    <Component Id="cmp594C7831EA30DE7ED8B52DA75BBF3401" Guid="{CC4BC23C-308A-49FA-B35E-7E8BA0F4EC32}">
-                        <File Id="fil05BBFC86FF2B3A82ED0508BE6EE59AAA" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.pdb" />
+                    <Component Id="cmp594C7831EA30DE7ED8B52DA75BBF3401" Guid="{95DCB355-C8C8-4301-B05D-0E2AFBFAB84D}">
+                        <File Id="fil05BBFC86FF2B3A82ED0508BE6EE59AAA" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.pdb" />
                     </Component>
-                    <Component Id="cmp63C7E5A92879C62ABA145D6922D437BA" Guid="{3E8C431B-570B-4413-B7A2-67E6EF7D8A70}">
+                    <Component Id="cmp63C7E5A92879C62ABA145D6922D437BA" Guid="{DB44BD45-EC6E-43CB-B178-90438FC4CCE8}">
                         <File Id="fil6DA0CD240F0718EFB27DFFEFEE258F90" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.addin" />
                     </Component>
-                    <Component Id="cmp6D613CA390DA097FEC8DB69320358DCF" Guid="{FE15E06D-2ADF-44E1-805D-8291661EA9AC}">
+                    <Component Id="cmp6D613CA390DA097FEC8DB69320358DCF" Guid="{168050FF-4520-46DF-B4D2-B39A324BD54C}">
                         <File Id="filA1294046A1C0DCB7CC06A2948CF8C316" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll" />
                     </Component>
-                    <Component Id="cmpFD4E0110A874C67A086DB1ADF39648AD" Guid="{FC935343-8AB2-4840-A65C-D0C60CD3F871}">
+                    <Component Id="cmpFD4E0110A874C67A086DB1ADF39648AD" Guid="{3AAA7325-2E23-4F0E-A237-092AFFC60AE3}">
                         <File Id="fil23BBAF88D1693DECD949EA5B39A89219" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll.config" />
                     </Component>
-                    <Component Id="cmpD502734260AEF5CFA157ADE483F2446A" Guid="{5CF16548-29E1-462C-A15E-7495AE5E845D}">
+                    <Component Id="cmpD502734260AEF5CFA157ADE483F2446A" Guid="{ABA1D118-8A4B-400A-87AB-24F4654FCA1F}">
                         <File Id="filC4986023DECCF33C6244363490567D1E" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.pdb" />
                     </Component>
-                    <Component Id="cmpDCEE0E50FD7B138E8B4BDD764DD3C4B0" Guid="{A60F9C6B-B085-46EA-8471-AC55125303D8}">
+                    <Component Id="cmpDCEE0E50FD7B138E8B4BDD764DD3C4B0" Guid="{7E8B289C-02CD-4DCA-9F0C-2A7D35D75537}">
                         <File Id="fil81333F68893481C7D9D7455362483496" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll" />
                     </Component>
-                    <Component Id="cmp9802D228363162F86D1017CB8338A9CC" Guid="{F4BFBE99-6C4E-4353-8EA9-C28A9646DBA2}">
+                    <Component Id="cmp9802D228363162F86D1017CB8338A9CC" Guid="{0EE14708-15D4-4ADD-8B5E-F09D2362B50D}">
                         <File Id="fil3A0C90482610F1B92F34607805F38392" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll.config" />
                     </Component>
-                    <Component Id="cmp8460A49E6A7B604E740DD9ABA6E4BFC3" Guid="{B3E9D090-E4B4-49D8-9854-0DF0456D8A65}">
+                    <Component Id="cmp8460A49E6A7B604E740DD9ABA6E4BFC3" Guid="{1A92B464-CB64-4DB6-96FF-3E68BEED2C0D}">
                         <File Id="fil8641E94CABCDAF214586BAAAD6E59249" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll" />
                     </Component>
-                    <Component Id="cmp46E56B8AF7DBC53665B0A007AE9ACE61" Guid="{AD83E6AB-88C2-499D-BA74-72C8C7BBDFC7}">
+                    <Component Id="cmp46E56B8AF7DBC53665B0A007AE9ACE61" Guid="{3217E6C1-0827-4AA3-9676-A9AF73ED22CC}">
                         <File Id="fil287047AF028D72358182721F8BA56669" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll.config" />
                     </Component>
-                    <Component Id="cmp464809E8ABFB0D496FA22640D431B5C8" Guid="{DA8FF353-1C57-43CC-B22C-BACEBDFBFAF1}">
+                    <Component Id="cmp464809E8ABFB0D496FA22640D431B5C8" Guid="{E67BB025-F475-4BAA-A634-282391EA78C8}">
                         <File Id="filE6F1DCCC2E7546368C52186F4A6281AC" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\MyCompany.Template.UI.pdb" />
                     </Component>
-                    <Component Id="cmpD1F817E8E58CFE8295D8D02C52764C8A" Guid="{BB2F2AA9-859A-4EB7-8994-F450D101660E}">
+                    <Component Id="cmpD1F817E8E58CFE8295D8D02C52764C8A" Guid="{4E7362D2-AA06-4473-A811-DCD415826E7E}">
                         <File Id="fil2EE03259D3F5FFFC1638B2290BB026F7" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\Newtonsoft.Json.dll" />
                     </Component>
-                    <Component Id="cmp6F868F16FC104CB62BB492FDEB47F007" Guid="{C30A0097-7CD9-4A9B-9E33-D7F074BCCC87}">
+                    <Component Id="cmp6F868F16FC104CB62BB492FDEB47F007" Guid="{71302FCD-51A0-4EE4-8DB7-1110329D395E}">
                         <File Id="fil3352735979BFC5F23F5520D12BB56823" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\Newtonsoft.Json.xml" />
                     </Component>
-                    <Component Id="cmpD9F9AA6D6CAA5110B339172159B15B1A" Guid="{59B2C17E-6F3D-4242-992F-4FC4F1A912AB}">
+                    <Component Id="cmpD9F9AA6D6CAA5110B339172159B15B1A" Guid="{CCC6B38D-514B-4C67-8D65-262451F4D547}">
                         <File Id="fil5D68C46112DB03585DE8E896DD709578" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\RestSharp.dll" />
                     </Component>
-                    <Component Id="cmp961D9C06602E887003ECA990A5CAFCFF" Guid="{FA134BD5-B203-423F-AB24-79150C275AD9}">
+                    <Component Id="cmp961D9C06602E887003ECA990A5CAFCFF" Guid="{16D14EC4-144A-483D-ABE7-135C1CB7FEC4}">
                         <File Id="filBC268B0E14466CD273ADA6CD7CAA6F72" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\RestSharp.xml" />
                     </Component>
-                    <Component Id="cmp71D803A5136EA195D9ECFB215AC8479B" Guid="{8FC7342D-AA03-467A-B856-131B15ABAAFB}">
+                    <Component Id="cmp71D803A5136EA195D9ECFB215AC8479B" Guid="{8F4C6F14-BE2E-4546-8A74-5C49BCBCD333}">
                         <File Id="filBB1954079915184A55CB46A4E14D9524" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Buffers.dll" />
                     </Component>
-                    <Component Id="cmpF1C400FF277D9D41013EFF9BF1DE215C" Guid="{FC6F4AA0-ED4F-4F97-8A4C-DB6A43455D84}">
+                    <Component Id="cmpF1C400FF277D9D41013EFF9BF1DE215C" Guid="{16CE0297-EA8A-4C03-8B0E-981B9C94F061}">
                         <File Id="fil800507918C4C6918505C458B61694755" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Buffers.xml" />
                     </Component>
-                    <Component Id="cmp863B6333BE6CCFF1063D514D2FCF6026" Guid="{41C06216-08F6-44E3-A40C-70388D7FB73C}">
+                    <Component Id="cmp863B6333BE6CCFF1063D514D2FCF6026" Guid="{8438C9CD-95AD-4805-A3C7-148114392E01}">
                         <File Id="fil38788A52BADDF5275DF6586071DF7701" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Memory.dll" />
                     </Component>
-                    <Component Id="cmp6E4F685D2CAB57741C936C7EFEEA9022" Guid="{3F84DE2B-156F-4540-9C6C-1F83D3BB80A7}">
+                    <Component Id="cmp6E4F685D2CAB57741C936C7EFEEA9022" Guid="{7530A53F-513D-4257-87C7-9BA3EFCF00BD}">
                         <File Id="filDA9BE93C3732F140B8FBA028210143EA" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Memory.xml" />
                     </Component>
-                    <Component Id="cmpD6C31A0997C36A5D1C351596955128DE" Guid="{3122C36F-238F-4B3E-8184-9DF9858B022B}">
+                    <Component Id="cmpD6C31A0997C36A5D1C351596955128DE" Guid="{64D15B63-565D-41CA-8D24-103F04A0B81D}">
                         <File Id="filD437B093874DFBDCEC8F14641272EF39" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Numerics.Vectors.dll" />
                     </Component>
-                    <Component Id="cmp4C04E277972D1FD7C634D32B3D2D5F6C" Guid="{13675456-510D-47F5-B34D-48F73FADAB96}">
+                    <Component Id="cmp4C04E277972D1FD7C634D32B3D2D5F6C" Guid="{1F9DFD44-571A-45F6-B609-BDB914B8F07D}">
                         <File Id="filD5152410B47DCED171DD088B10786443" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Numerics.Vectors.xml" />
                     </Component>
-                    <Component Id="cmpE117695D85AC17AD544E649BC6B4A254" Guid="{0C5D13C1-8EB3-4149-8914-54D66369C9B3}">
+                    <Component Id="cmpE117695D85AC17AD544E649BC6B4A254" Guid="{2238FB00-DB4F-4717-992F-24B841D45636}">
                         <File Id="fil805C961F16EC030F4DD3B24C306592AB" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.dll" />
                     </Component>
-                    <Component Id="cmp676D8B6B4EB174AA62BDBB729A1241F3" Guid="{E4D6DBEC-9B27-4C11-BF3F-5102671C51CC}">
+                    <Component Id="cmp676D8B6B4EB174AA62BDBB729A1241F3" Guid="{1219A1C2-12A2-4F3F-9723-4584B6D6A496}">
                         <File Id="fil5EB144454E9051BEEB9FBF65F485C194" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.xml" />
                     </Component>
-                    <Component Id="cmp204340D97B25B7A821D0154E4FFB3945" Guid="{C363A4A9-A06C-4EE4-99BF-9066696DA434}">
+                    <Component Id="cmp204340D97B25B7A821D0154E4FFB3945" Guid="{53B9DA6A-1B43-4CBC-800D-AB5B564A4413}">
                         <File Id="fil71F12AF894582BF907627004F3B3A760" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.dll" />
                     </Component>
-                    <Component Id="cmpC4BAC794E4256A171C465CBD55A1680C" Guid="{4783241E-5481-4366-9CEA-333622578028}">
+                    <Component Id="cmpC4BAC794E4256A171C465CBD55A1680C" Guid="{FD43771B-594E-4C20-836C-9FC092A9C056}">
                         <File Id="fil22D5251A47A54DA83182E34B936B4B92" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.xml" />
                     </Component>
-                    <Component Id="cmp37BE528E7F969FB91AB395E66670E262" Guid="{DDFDDAAD-BF45-4D62-8CFD-DFF20D6B7751}">
+                    <Component Id="cmp37BE528E7F969FB91AB395E66670E262" Guid="{A9077607-8283-422F-9424-89E62F632A9C}">
                         <File Id="fil3DC275CAFD4F6BF5C3C8E72937D30F39" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Text.Json.dll" />
                     </Component>
-                    <Component Id="cmp6BB7A0EE23A22EB893681FE9584F0354" Guid="{94BAC2D9-5B82-4020-862D-10358A7EA327}">
+                    <Component Id="cmp6BB7A0EE23A22EB893681FE9584F0354" Guid="{F3F64486-24B4-4406-AC71-D10AD795837A}">
                         <File Id="fil3E4639D272B36773AFAFCEA5868EC9D1" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Text.Json.xml" />
                     </Component>
-                    <Component Id="cmp1031FED0C21C5A0F9E73FC624BF2796B" Guid="{9D23F67E-C4EA-4073-A9A5-10F379351B9E}">
+                    <Component Id="cmp1031FED0C21C5A0F9E73FC624BF2796B" Guid="{223A2224-C03A-4CFA-86CA-14F9B7BECC2A}">
                         <File Id="filB64871B321E67937353FCDFB7A39C724" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.dll" />
                     </Component>
-                    <Component Id="cmp59D69822A94192087FF57B22772ECADC" Guid="{C25BAD12-7248-4FF1-8B37-A337B165809A}">
+                    <Component Id="cmp59D69822A94192087FF57B22772ECADC" Guid="{1D533379-60BA-4541-A5A3-18A8D67CE733}">
                         <File Id="filA912658533431D2DFDB6F66938F1660C" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.xml" />
                     </Component>
-                    <Component Id="cmpEE7222AB65E50D61EF6556F60288388C" Guid="{6BB3E3EC-F552-4734-A074-A1B61958DE4E}">
+                    <Component Id="cmpEE7222AB65E50D61EF6556F60288388C" Guid="{3CA4293D-5604-4489-A744-E285F8DAAF48}">
                         <File Id="fil9BE4A33CC011B441A0EB70BB8DCAD839" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.ValueTuple.dll" />
                     </Component>
-                    <Component Id="cmp43F11274D2961954823351B0DC3F5300" Guid="{75CB1F1D-DC0C-483F-91DF-3050E31E9483}">
+                    <Component Id="cmp43F11274D2961954823351B0DC3F5300" Guid="{10DA6002-8869-4BD3-BB5A-D22F0724BB92}">
                         <File Id="filD6CF97BC0FA3A93E4377BE84DEEC352E" KeyPath="yes" Source="$(var.BasePath)\2022\MyCompany.Template.RevitAddin\System.ValueTuple.xml" />
-                    </Component>
-                </Directory>
-            </Directory>
-            <Directory Id="dir52D7679FD37CA366B3FC1CFD017A9232" Name="2023">
-                <Directory Id="dir736819E2BFAD42AA8EBD8897A3D8EAC0" Name="MyCompany.Template.RevitAddin">
-                    <Component Id="cmpE7B68E9B5F3E6D1ABF32C032AE89F895" Guid="{47BDE30C-936E-465C-A517-A144F368BC65}">
-                        <File Id="fil059C8EE9CF8F749DEA6C96CA867CC2E9" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\App.db" />
-                    </Component>
-                    <Component Id="cmp39DCB057F83935138E87AB33DE79DC6D" Guid="{339A7E6E-5428-427F-9B92-5611E89B161A}">
-                        <File Id="filA39BC7D4664E9F3272B468A831D1BD29" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.dll" />
-                    </Component>
-                    <Component Id="cmp8D504DB4A9CBCBC6EC4BD9F8A779843B" Guid="{069EDC5F-CEE6-4C39-9C17-6FA22C1F3D34}">
-                        <File Id="fil6AC4207E4C23C1A7AF3E7581CEE168E6" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.xml" />
-                    </Component>
-                    <Component Id="cmp2C1F7DC304EDE287E9B8865C65A7C316" Guid="{5F3EFA66-B047-4791-B72C-519F9C999AD9}">
-                        <File Id="fil1B8358CE6A446C70DD926E66329FC572" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.dll" />
-                    </Component>
-                    <Component Id="cmp86E27E15D683560AEAD145B10BA0FF70" Guid="{984221C9-A128-4A2E-B739-358A4A1A0581}">
-                        <File Id="filFFACBB2FEA4685FAD26F02A886560491" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.pdb" />
-                    </Component>
-                    <Component Id="cmp9B7CF0669F69F64E2D66B89FDB33676B" Guid="{88991A93-5393-4629-9AD3-7A01965F78F3}">
-                        <File Id="filC50F3AE5EAF26EBC57AC6CC522C6F904" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.addin" />
-                    </Component>
-                    <Component Id="cmpC2CAB3FEDB9391DB7488666922901EC8" Guid="{B5CB75C2-2B8D-4ECD-B755-E44053DF4D28}">
-                        <File Id="fil20052F2BD5D47666C80C23D1B5180DB3" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll" />
-                    </Component>
-                    <Component Id="cmp972A0FABCE509F9F719AECB160D54CA2" Guid="{40845030-4C22-4186-985A-CF6F47303C3E}">
-                        <File Id="fil6A31E3EFBE3CB14E343B47A1F2D59071" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll.config" />
-                    </Component>
-                    <Component Id="cmp628E1773D22E8B6D328905A20A278FA8" Guid="{B3A65754-C055-4636-A3DC-E2C2F04C0452}">
-                        <File Id="filEED888612898BE49C536F4D7CCDAD25B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.pdb" />
-                    </Component>
-                    <Component Id="cmp0B0E050449026D985FC5D169807E142C" Guid="{6311E6F6-FF49-43C1-8B14-D5D614B81329}">
-                        <File Id="fil89949B51D9195042B3AD32538843D876" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll" />
-                    </Component>
-                    <Component Id="cmp9F22035CC79F45EFB355F5F3E923A554" Guid="{B7E10A06-5BB2-44A4-AA47-53004E8A0E7C}">
-                        <File Id="fil679BFB82BE3E8D4A6D0731E583402170" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll.config" />
-                    </Component>
-                    <Component Id="cmp9AB46EBBA7A14DE6301529366871B004" Guid="{B93A7205-74F6-4DE9-A991-5BF4059CB556}">
-                        <File Id="fil23EF164731244086192283ED062EB91B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll" />
-                    </Component>
-                    <Component Id="cmpAE58ACF69C22B2A0C4748C154268FA56" Guid="{91F48289-0052-4DCF-B441-97C15D1ACE01}">
-                        <File Id="fil2C7707AF0442F2CD87FD8403A640ACA6" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll.config" />
-                    </Component>
-                    <Component Id="cmp286A9FCA5BE439114500C9F5A90487EF" Guid="{38F434DD-D256-4B21-BF51-EA9595892647}">
-                        <File Id="filE3CB4CE710A1C4857917DD88561E4F9B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\MyCompany.Template.UI.pdb" />
-                    </Component>
-                    <Component Id="cmp6C2DE27C8347B0844382CC2251B6B541" Guid="{45F1E4FB-A9A0-4B5D-8AA0-E35FC2D6AAC2}">
-                        <File Id="filA160CC3EB3290300CACCEB72A3D32662" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\Newtonsoft.Json.dll" />
-                    </Component>
-                    <Component Id="cmp3B4973FA23C415E86742F97A85F1A445" Guid="{7CD14C35-3825-4C8E-BC5C-EE88ED1517B8}">
-                        <File Id="filAF42361600A23B26E6D4A0B5A4383E23" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\Newtonsoft.Json.xml" />
-                    </Component>
-                    <Component Id="cmp0115E158C7D1A5B0161C173BC0438E9F" Guid="{2F48BC96-9DB0-4D43-829F-45F1DA59B8CE}">
-                        <File Id="fil296119BA4DBB24FD96A410672B3018DB" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\RestSharp.dll" />
-                    </Component>
-                    <Component Id="cmp978298DB9BE2DECB96253CE9C259F086" Guid="{47AE1A8E-F7C8-4BDF-9957-DD59A6528393}">
-                        <File Id="fil971744062C05CD7357DDD90A6259471A" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\RestSharp.xml" />
-                    </Component>
-                    <Component Id="cmp1AB5A8930E64AFA3A055786FEFA1E3D3" Guid="{EE24A81E-544D-43C2-A178-F6411FE75F17}">
-                        <File Id="filC22C08BE5FFD593CA13D95C804999257" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Buffers.dll" />
-                    </Component>
-                    <Component Id="cmpCA25DCB5FED13FA6B4B8EFF318A182D9" Guid="{4CE436B8-C1CF-4B1F-8621-4FFF8AEF8149}">
-                        <File Id="filC61CDB2892D1115D6124085B1D2711DE" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Buffers.xml" />
-                    </Component>
-                    <Component Id="cmp6E879CE7AB4FFC181C3301ED31F19E6E" Guid="{CA380952-7FE0-4A9B-8FA8-087648AB2F38}">
-                        <File Id="filA7E6C8B538392A88666B4D6364F04BDC" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Memory.dll" />
-                    </Component>
-                    <Component Id="cmpFCC00FE975ADD283F3C7D3A299D53DF6" Guid="{7BE4962F-F53A-4CB0-A3B3-81027F6A1AF1}">
-                        <File Id="fil49ABF0B18B1D77B3B87B307F49173558" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Memory.xml" />
-                    </Component>
-                    <Component Id="cmp88D63F8B7DD2E1F4DEF5580F985F03D0" Guid="{A6C3991B-0DC7-4D8D-A039-4E21ADF91535}">
-                        <File Id="fil41F901116F57D5EE14AE4FB698D28775" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Numerics.Vectors.dll" />
-                    </Component>
-                    <Component Id="cmp54604A253E0E67C79C693189C18B2F93" Guid="{1AEB10BF-8308-4ACF-9252-C13F0D6CDF9D}">
-                        <File Id="fil02B69770C09BBA129D514DBE4AE927AC" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Numerics.Vectors.xml" />
-                    </Component>
-                    <Component Id="cmp15C5F449A76CC5EA1E78767985F820AA" Guid="{A4F148B8-BE79-4A86-8E84-6273F4A2657F}">
-                        <File Id="fil690EF2F038CAACBBFC5C66AC41B77FBF" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.dll" />
-                    </Component>
-                    <Component Id="cmp9334A313FBBA841720E583A35B07507A" Guid="{CAD7930F-BEE2-4D6D-AD62-EB2DEF3EC872}">
-                        <File Id="fil4B8D7B39AF073AB485665D0DC9976B35" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.xml" />
-                    </Component>
-                    <Component Id="cmpE34EB719F96D62726106836F515D23F3" Guid="{04DB3D66-529E-473C-BCF2-81627FD0721F}">
-                        <File Id="fil1ED913AAE0E162FF23E2325EEF379B2B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.dll" />
-                    </Component>
-                    <Component Id="cmpDA93AC0CE0E789110E07904C32569B08" Guid="{82383A86-05A3-4BE5-85A4-070990D8FD2B}">
-                        <File Id="filF517A3A52B6F7F64FD5F67BAD6BEF71B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.xml" />
-                    </Component>
-                    <Component Id="cmpBE3430F214E25442E30FD68354648C3D" Guid="{5F66C9EC-CA94-4CC1-87F9-56032FFEE894}">
-                        <File Id="fil26881927870B3C7FA873B3B37B513575" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Text.Json.dll" />
-                    </Component>
-                    <Component Id="cmp323A72BA7F08D014D8F0FB9874359320" Guid="{8F7757DA-512F-4B9B-98E2-EAEE7A1B57C8}">
-                        <File Id="fil1D03BA5AA32CAC2A32163D15A4000F3F" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Text.Json.xml" />
-                    </Component>
-                    <Component Id="cmpD4EB6C65A11FC23AF2B4CCE536D9E47F" Guid="{7A3112D9-6F4F-4AA7-B045-FECDED29FD22}">
-                        <File Id="filC0071D09F1F2F5D090E4383748AEE610" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.dll" />
-                    </Component>
-                    <Component Id="cmpDB8E54FEA68DC7D5F907BA0C01DCBA67" Guid="{D4507457-269C-46C0-8585-40066709B75A}">
-                        <File Id="filB3D65C06FAC3B0728556604872411DDF" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.xml" />
-                    </Component>
-                    <Component Id="cmpA4B0759FF81FFCC5C2EFE87B7E07C64B" Guid="{F69A2645-A16B-4F4B-91D2-1A20B2C036E8}">
-                        <File Id="filBCBF23A92988A81BED173A29DF81E0AB" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.ValueTuple.dll" />
-                    </Component>
-                    <Component Id="cmp8D74830C0E9B84160FB780FD4A9153D8" Guid="{51D1C6CC-66B1-4A53-8B91-F7ECC954BD48}">
-                        <File Id="fil0827B90E456BA4BE17FA053CC689404B" KeyPath="yes" Source="$(var.BasePath)\2023\MyCompany.Template.RevitAddin\System.ValueTuple.xml" />
                     </Component>
                 </Directory>
             </Directory>
             <Directory Id="dir9BA393E8EAF745B5592E25228B40DCF7" Name="2024">
                 <Directory Id="dir73F23E0D185964874E05549A7D164498" Name="MyCompany.Template.RevitAddin">
-                    <Component Id="cmp4B7E8A64C93E59C63AD515D9D2F4604E" Guid="{63D80DC0-D4EC-46F1-869A-DB9FCB09E500}">
+                    <Component Id="cmp4B7E8A64C93E59C63AD515D9D2F4604E" Guid="{E93D2BE0-ABFF-4B29-B590-DB429CF17455}">
                         <File Id="fil20771D6CD63B3F896A532F86D09A2263" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\App.db" />
                     </Component>
-                    <Component Id="cmp9A8B7B8DA783BB1199F9E8C0B82D0A53" Guid="{872A1321-B42A-4FED-A01B-8F009D62E13A}">
+                    <Component Id="cmp9A8B7B8DA783BB1199F9E8C0B82D0A53" Guid="{4B70684E-2166-4722-A47A-1455A3CB34EC}">
                         <File Id="fil5210AB395FA4A94B12C30F0C211EDA7C" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.dll" />
                     </Component>
-                    <Component Id="cmpF0150E8DBC8D00A936430FB640D8488B" Guid="{53F7AFFA-E5A8-446D-8F39-44697683091B}">
+                    <Component Id="cmpF0150E8DBC8D00A936430FB640D8488B" Guid="{6C5BA0E8-C86F-4C86-B44A-4662777EF2C4}">
                         <File Id="fil633E38DF20D19C0774894D6EB066ACF0" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\Microsoft.Bcl.AsyncInterfaces.xml" />
                     </Component>
-                    <Component Id="cmpD7108E86D869A801E1BB46F84779259D" Guid="{BF147B6A-AC26-4B85-BAE3-D363EAEF1025}">
-                        <File Id="fil519EA68AC7C4324CA37EA3840A38252F" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.dll" />
+                    <Component Id="cmpD7108E86D869A801E1BB46F84779259D" Guid="{70657D9C-63C2-41C0-97DE-4F591DD8F9B4}">
+                        <File Id="fil519EA68AC7C4324CA37EA3840A38252F" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.dll" />
                     </Component>
-                    <Component Id="cmp39E550973C198C189FF205AADE09B5BB" Guid="{A3EB440D-C191-4F2F-AB30-73827325C4F1}">
-                        <File Id="fil42C9736D081501CCD150130D435AC90D" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.Abstractions.pdb" />
+                    <Component Id="cmp39E550973C198C189FF205AADE09B5BB" Guid="{110B6ED9-21A6-4F28-B270-38F7621D2448}">
+                        <File Id="fil42C9736D081501CCD150130D435AC90D" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.Abstraction.pdb" />
                     </Component>
-                    <Component Id="cmpDE01873D02F5C1449F7BF66670E4991E" Guid="{2DB13051-8084-4653-B904-6909EC88B0CB}">
+                    <Component Id="cmpDE01873D02F5C1449F7BF66670E4991E" Guid="{434E7802-90B1-4EB4-8D3E-844AA9637829}">
                         <File Id="filA52B1B6781E9417FA6A387254C2452F7" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.addin" />
                     </Component>
-                    <Component Id="cmp5412BD2D8E98C176F8E4FFB81C8FEF75" Guid="{D9DEAD0F-C00B-431A-AA83-BE8CFA580026}">
+                    <Component Id="cmp5412BD2D8E98C176F8E4FFB81C8FEF75" Guid="{DFB9C707-1F27-4723-851B-5BF88812CB34}">
                         <File Id="filB5D0536FD050E6BC52DDF37CBF4F179C" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll" />
                     </Component>
-                    <Component Id="cmpFC195FAE20D5C73532D6AE2E058996D3" Guid="{26DC3D7A-2F3B-4E17-B446-BDD8D60F1B34}">
+                    <Component Id="cmpFC195FAE20D5C73532D6AE2E058996D3" Guid="{497A980B-3060-4D87-8AFF-503149710E4B}">
                         <File Id="filFAA512617318DFEE09842CC473DD5213" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.dll.config" />
                     </Component>
-                    <Component Id="cmp4A59CE38606DB2F6CE666AA80C7E2CC6" Guid="{9AAD6A32-F337-4036-8946-3F3FC4B0D0CB}">
+                    <Component Id="cmp4A59CE38606DB2F6CE666AA80C7E2CC6" Guid="{30860DC9-41FA-4B4E-AB78-A51AB2273B68}">
                         <File Id="fil5B8537053DFDBE322A41549D65F7021F" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.DataAccess.pdb" />
                     </Component>
-                    <Component Id="cmp991D1A307FF0B92A8CF3C439015AA5ED" Guid="{CE8EF4C6-76EE-4996-A62B-2B7A141CD9C4}">
+                    <Component Id="cmp991D1A307FF0B92A8CF3C439015AA5ED" Guid="{37BB741E-11D2-4B24-B8BD-5748788FF725}">
                         <File Id="fil33CBFE73845D69452187BE8BE3A1293C" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll" />
                     </Component>
-                    <Component Id="cmpA5827FF555388461F63972C054ED0CC9" Guid="{DA00258A-7E32-4418-BFB5-74924E52DF45}">
+                    <Component Id="cmpA5827FF555388461F63972C054ED0CC9" Guid="{91998FF5-3507-4A56-97BD-5A511B6DAD0C}">
                         <File Id="fil4985BFC35A46041B5DF928624E3F30A1" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.RevitAddin.dll.config" />
                     </Component>
-                    <Component Id="cmp8A90F09A99A4ECAEF471C388090FC7B8" Guid="{55334108-B2A7-43CD-801F-A617F5AAA9A5}">
+                    <Component Id="cmp8A90F09A99A4ECAEF471C388090FC7B8" Guid="{82E41F53-5F28-491F-9309-5D829FAC6F89}">
                         <File Id="fil98F82C743064F8169E44ED9D3E7E369F" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll" />
                     </Component>
-                    <Component Id="cmp7526ADFB3E0CF5362B0BF3AB2972B74D" Guid="{5D5DA730-8982-49FC-B1AC-5E718B992D1E}">
+                    <Component Id="cmp7526ADFB3E0CF5362B0BF3AB2972B74D" Guid="{197B41BE-9E27-477B-BCA4-C31CF32617F7}">
                         <File Id="filAA66E01488372458CA8BC23AE41F7457" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.UI.dll.config" />
                     </Component>
-                    <Component Id="cmpCCE0D8BC80A1D33066D34D56BF67AB2A" Guid="{1F44ABA2-55FA-4642-896A-5FC06142C91C}">
+                    <Component Id="cmpCCE0D8BC80A1D33066D34D56BF67AB2A" Guid="{6B592466-9E4E-4527-87F3-C971F0DD5AD5}">
                         <File Id="fil8B1F778896267D8FEDF6AD91BD56AC1D" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\MyCompany.Template.UI.pdb" />
                     </Component>
-                    <Component Id="cmpDB6FDF1975FB1F5D41A07562D43172AC" Guid="{7B172672-938A-4D18-9600-47319FF9ACDF}">
+                    <Component Id="cmpDB6FDF1975FB1F5D41A07562D43172AC" Guid="{087616A6-2412-4976-8720-826939227F1A}">
                         <File Id="filF2600406476CB614563A346257B76A70" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\Newtonsoft.Json.dll" />
                     </Component>
-                    <Component Id="cmpEDEC09E337FAD155B0BEF11C1EAE6F9D" Guid="{195191DA-CD46-442D-A55D-290ABD8A7FFB}">
+                    <Component Id="cmpEDEC09E337FAD155B0BEF11C1EAE6F9D" Guid="{84F750DF-C5DC-4C92-A9A2-124612187490}">
                         <File Id="fil02200623634340EAF14B46DFE3CA38A5" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\Newtonsoft.Json.xml" />
                     </Component>
-                    <Component Id="cmp507D3B81FA8917FFB22BB291C991D1A0" Guid="{ABF4416A-6F7E-445A-8608-741EC62A3EED}">
+                    <Component Id="cmp507D3B81FA8917FFB22BB291C991D1A0" Guid="{2C1A2B38-A67A-4E6C-A08F-A33422E882B8}">
                         <File Id="fil0EE68F93DDA3E92A56C4477F8D994D99" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\RestSharp.dll" />
                     </Component>
-                    <Component Id="cmpE739EEAEDDDDB5EC21DC067D878DDC4D" Guid="{6AD672FB-F19B-4CE8-9BF9-FA1D26445633}">
+                    <Component Id="cmpE739EEAEDDDDB5EC21DC067D878DDC4D" Guid="{D4BAFF73-87E1-46C3-A38B-54B53715AFFC}">
                         <File Id="fil5CFC43B737DD382BBD4C3F00ADA3214B" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\RestSharp.xml" />
                     </Component>
-                    <Component Id="cmp30253D1201E8E463A0AC24A1EA1344EF" Guid="{D627CC5D-4F08-454E-8593-909522E5077E}">
+                    <Component Id="cmp30253D1201E8E463A0AC24A1EA1344EF" Guid="{C7A703DC-A5F0-47BA-A898-C7A5D02DE8DF}">
                         <File Id="fil75F2C15E61B4C97763B6C75BB98C82C4" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Buffers.dll" />
                     </Component>
-                    <Component Id="cmp0E41D5376B4D0DC9B68CFE420F69F363" Guid="{2E6CD5FE-A28C-4372-86FE-311079B69E7B}">
+                    <Component Id="cmp0E41D5376B4D0DC9B68CFE420F69F363" Guid="{0FD33971-683C-47B5-A5A9-2EFA96A9ABC3}">
                         <File Id="fil6DF7166DB602AEDC27E8EE514A014F46" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Buffers.xml" />
                     </Component>
-                    <Component Id="cmpB9314262D986CC7CCCCC180F9D7D80AC" Guid="{96CA8797-A9D1-48E4-AD6B-F965D44A9590}">
+                    <Component Id="cmpB9314262D986CC7CCCCC180F9D7D80AC" Guid="{A8CF87B0-1DE5-4689-8CD2-A1264979C699}">
                         <File Id="fil919344CC971E2DDB8CDC144882AADBD6" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Memory.dll" />
                     </Component>
-                    <Component Id="cmp54582BA32C9FBE9ED14B71E43A86CA0E" Guid="{2C2BE2FA-5BC7-4A99-92B6-A5DA2B1A7002}">
+                    <Component Id="cmp54582BA32C9FBE9ED14B71E43A86CA0E" Guid="{337A8733-62F3-4DE5-928E-428F02AE8ACE}">
                         <File Id="filE84271D78BDB0BFD4361BDAB2BE9F174" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Memory.xml" />
                     </Component>
-                    <Component Id="cmpB8B603E254EC126EA1901A55403E38C6" Guid="{65E56BC6-2B2A-4CCE-BF71-45D5CDB08E87}">
+                    <Component Id="cmpB8B603E254EC126EA1901A55403E38C6" Guid="{A8EC80F8-BB5B-4A3A-8BFC-3446D984A07E}">
                         <File Id="filEADB7C5BCCF97C6121054FCF243981DB" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Numerics.Vectors.dll" />
                     </Component>
-                    <Component Id="cmp9947F16A3CC0D88DD02A8B3546525608" Guid="{33D8A7F2-3DE9-4759-842C-CFC2A30C7C4B}">
+                    <Component Id="cmp9947F16A3CC0D88DD02A8B3546525608" Guid="{7F10EA72-C35D-4EF1-8A3B-98176CF4B964}">
                         <File Id="fil4428AEDB0FC63893696D9C9BE42BC5F4" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Numerics.Vectors.xml" />
                     </Component>
-                    <Component Id="cmpB7F96D53C776969D59F33B3ADC228A3F" Guid="{F03C1C7C-07F9-4D4A-8D40-80969076F973}">
+                    <Component Id="cmpB7F96D53C776969D59F33B3ADC228A3F" Guid="{B2CF2CE6-EE21-4CD1-84A5-2711ACECEC8E}">
                         <File Id="filF753E405885BF2EE792E61F215D4F973" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.dll" />
                     </Component>
-                    <Component Id="cmpC2CA6E2BD42215A5E1A928577011C11D" Guid="{CDD30441-5588-4CD6-9C93-499DB665A54B}">
+                    <Component Id="cmpC2CA6E2BD42215A5E1A928577011C11D" Guid="{456C1034-14AA-43C9-A003-9444182A8EF9}">
                         <File Id="fil95022BBC77D75AE583EAE6C0E1E9D288" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Runtime.CompilerServices.Unsafe.xml" />
                     </Component>
-                    <Component Id="cmp0DC8E872805305DD7BD89497A9E00668" Guid="{A0DFA242-4F87-4595-8D40-3727652E24F2}">
+                    <Component Id="cmp0DC8E872805305DD7BD89497A9E00668" Guid="{E24D5A5E-B734-4CFD-B11E-7708E48200F3}">
                         <File Id="fil43B610BC4AD0F538F6ADFA5D2D7132D4" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.dll" />
                     </Component>
-                    <Component Id="cmpE777A7058B3F9EDAA25426A353CBD94C" Guid="{B3CDB88A-CC62-4A8D-892C-C814AF3A55C5}">
+                    <Component Id="cmpE777A7058B3F9EDAA25426A353CBD94C" Guid="{1A9663FA-4FDE-4E3E-8C21-6B8896F6496E}">
                         <File Id="fil5B171A14ED1BF8D3B4333760BCD7DA21" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Text.Encodings.Web.xml" />
                     </Component>
-                    <Component Id="cmpDD40B3709C901D4730571E75B828145D" Guid="{5A9D685F-55D9-4C63-B6AB-CF1F682A2E63}">
+                    <Component Id="cmpDD40B3709C901D4730571E75B828145D" Guid="{B7F445C0-2AEA-419B-AE89-B45609430A89}">
                         <File Id="filB4FC3AD33CFDB272A6CAF3135C7C5FE1" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Text.Json.dll" />
                     </Component>
-                    <Component Id="cmpDA147DD41BE05AB0C241E3E25C195151" Guid="{85405351-98C5-4AA6-82BA-DED6A4F840A6}">
+                    <Component Id="cmpDA147DD41BE05AB0C241E3E25C195151" Guid="{8908D1E1-9CB8-4E37-81D9-21488D2EF6D7}">
                         <File Id="filB4FC3AFF32813BE798600F65F6D4E98B" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Text.Json.xml" />
                     </Component>
-                    <Component Id="cmpB0C21B76200AB6988C55D9892F120FC7" Guid="{8334A394-0BC7-48DC-8B5C-809026799F0D}">
+                    <Component Id="cmpB0C21B76200AB6988C55D9892F120FC7" Guid="{F25FD94F-E3B6-4C36-8DF8-54B8F6D7830F}">
                         <File Id="fil6C9BAF76F313903D3517FBAC202F0474" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.dll" />
                     </Component>
-                    <Component Id="cmpB3774B66FF3526DE91027812D2B5D0DE" Guid="{07201E1F-484B-4EA8-96F9-9B8E623BFF74}">
+                    <Component Id="cmpB3774B66FF3526DE91027812D2B5D0DE" Guid="{1CC44732-DBBD-495E-A8B6-EC1361BED16A}">
                         <File Id="fil42B0A730CEC6D1F1D1E3D7052CBE432E" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.Threading.Tasks.Extensions.xml" />
                     </Component>
-                    <Component Id="cmp91937BC4B63D54811D75C0E3AD53D006" Guid="{294FC51C-F0A5-495C-AACC-6ABD8E337BAC}">
+                    <Component Id="cmp91937BC4B63D54811D75C0E3AD53D006" Guid="{B9EF9DB9-1890-4CE9-8A62-68DE6B96237A}">
                         <File Id="fil5DEE72927DE59DB96E40EDF834982703" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.ValueTuple.dll" />
                     </Component>
-                    <Component Id="cmp2FF6428F9F2ABF1251812E93E09F345D" Guid="{35FC73AA-CB60-4D73-829F-A04AA17FF3D7}">
+                    <Component Id="cmp2FF6428F9F2ABF1251812E93E09F345D" Guid="{62798DAF-1794-40D9-971E-50AA2077468F}">
                         <File Id="fil3D5D1F95D78CCE99EEE54809035EB793" KeyPath="yes" Source="$(var.BasePath)\2024\MyCompany.Template.RevitAddin\System.ValueTuple.xml" />
                     </Component>
                 </Directory>
@@ -498,40 +392,6 @@
             <ComponentRef Id="cmp59D69822A94192087FF57B22772ECADC" />
             <ComponentRef Id="cmpEE7222AB65E50D61EF6556F60288388C" />
             <ComponentRef Id="cmp43F11274D2961954823351B0DC3F5300" />
-            <ComponentRef Id="cmpE7B68E9B5F3E6D1ABF32C032AE89F895" />
-            <ComponentRef Id="cmp39DCB057F83935138E87AB33DE79DC6D" />
-            <ComponentRef Id="cmp8D504DB4A9CBCBC6EC4BD9F8A779843B" />
-            <ComponentRef Id="cmp2C1F7DC304EDE287E9B8865C65A7C316" />
-            <ComponentRef Id="cmp86E27E15D683560AEAD145B10BA0FF70" />
-            <ComponentRef Id="cmp9B7CF0669F69F64E2D66B89FDB33676B" />
-            <ComponentRef Id="cmpC2CAB3FEDB9391DB7488666922901EC8" />
-            <ComponentRef Id="cmp972A0FABCE509F9F719AECB160D54CA2" />
-            <ComponentRef Id="cmp628E1773D22E8B6D328905A20A278FA8" />
-            <ComponentRef Id="cmp0B0E050449026D985FC5D169807E142C" />
-            <ComponentRef Id="cmp9F22035CC79F45EFB355F5F3E923A554" />
-            <ComponentRef Id="cmp9AB46EBBA7A14DE6301529366871B004" />
-            <ComponentRef Id="cmpAE58ACF69C22B2A0C4748C154268FA56" />
-            <ComponentRef Id="cmp286A9FCA5BE439114500C9F5A90487EF" />
-            <ComponentRef Id="cmp6C2DE27C8347B0844382CC2251B6B541" />
-            <ComponentRef Id="cmp3B4973FA23C415E86742F97A85F1A445" />
-            <ComponentRef Id="cmp0115E158C7D1A5B0161C173BC0438E9F" />
-            <ComponentRef Id="cmp978298DB9BE2DECB96253CE9C259F086" />
-            <ComponentRef Id="cmp1AB5A8930E64AFA3A055786FEFA1E3D3" />
-            <ComponentRef Id="cmpCA25DCB5FED13FA6B4B8EFF318A182D9" />
-            <ComponentRef Id="cmp6E879CE7AB4FFC181C3301ED31F19E6E" />
-            <ComponentRef Id="cmpFCC00FE975ADD283F3C7D3A299D53DF6" />
-            <ComponentRef Id="cmp88D63F8B7DD2E1F4DEF5580F985F03D0" />
-            <ComponentRef Id="cmp54604A253E0E67C79C693189C18B2F93" />
-            <ComponentRef Id="cmp15C5F449A76CC5EA1E78767985F820AA" />
-            <ComponentRef Id="cmp9334A313FBBA841720E583A35B07507A" />
-            <ComponentRef Id="cmpE34EB719F96D62726106836F515D23F3" />
-            <ComponentRef Id="cmpDA93AC0CE0E789110E07904C32569B08" />
-            <ComponentRef Id="cmpBE3430F214E25442E30FD68354648C3D" />
-            <ComponentRef Id="cmp323A72BA7F08D014D8F0FB9874359320" />
-            <ComponentRef Id="cmpD4EB6C65A11FC23AF2B4CCE536D9E47F" />
-            <ComponentRef Id="cmpDB8E54FEA68DC7D5F907BA0C01DCBA67" />
-            <ComponentRef Id="cmpA4B0759FF81FFCC5C2EFE87B7E07C64B" />
-            <ComponentRef Id="cmp8D74830C0E9B84160FB780FD4A9153D8" />
             <ComponentRef Id="cmp4B7E8A64C93E59C63AD515D9D2F4604E" />
             <ComponentRef Id="cmp9A8B7B8DA783BB1199F9E8C0B82D0A53" />
             <ComponentRef Id="cmpF0150E8DBC8D00A936430FB640D8488B" />

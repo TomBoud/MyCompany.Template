@@ -116,7 +116,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstractions.csproj" />
+    <ProjectReference Include="..\MyCompany.Template.Abstractions\MyCompany.Template.Abstractions.csproj" />
     <ProjectReference Include="..\MyCompany.Template.DataAccess\MyCompany.Template.DataAccess.csproj" />
     <ProjectReference Include="..\MyCompany.Template.UI\MyCompany.Template.UI.csproj" />
   </ItemGroup>

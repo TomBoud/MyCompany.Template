@@ -23,15 +23,16 @@ namespace MyCompany.Template.RevitAddin.Models
         public string CategoryName { get { return _element?.Category?.Name ?? string.Empty; } set { CategoryName = value; } }
         public string DocumentName { get { return _element.Document.Title; } set { DocumentName = value; } }
         
+
         public long ElementId 
         { 
             get 
             {
-#if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
+            #if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
                 return Convert.ToInt64(_element.Id.IntegerValue);
-#else
+            #else
                 return _element.Id.Value;
-#endif
+            #endif
             }
             set 
             { 
@@ -42,20 +43,20 @@ namespace MyCompany.Template.RevitAddin.Models
         { 
             get 
             {
-#if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
+            #if REVIT2023 || REVIT2022 || REVIT2021 || REVIT2020
                 return Convert.ToInt64(_element.LevelId.IntegerValue);
-#else
+            #else
                 return _element.LevelId.Value; 
-#endif
+            #endif
             } 
             set 
             { 
                 ElementId = value; 
             } 
         }
-#endregion
+        #endregion
 
-#region Methods
+        #region Methods
         private string GetLevelName()
         {
             Level level = _element.Document.GetElement(_element.LevelId) as Level;
@@ -69,6 +70,6 @@ namespace MyCompany.Template.RevitAddin.Models
                 return level.Name;
             }
         }
-#endregion
+        #endregion
     }
 }

@@ -89,11 +89,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyCompany.Template.Abstraction\MyCompany.Template.Abstractions.csproj">
-      <Project>{7c2321b6-d93e-4c9f-bef5-54c274508cb9}</Project>
+    <ProjectReference Include="..\MyCompany.Template.Abstractions\MyCompany.Template.Abstractions.csproj">
+      <Project>{af51ac74-3e3e-42f2-a99f-8c6664476589}</Project>
       <Name>MyCompany.Template.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
